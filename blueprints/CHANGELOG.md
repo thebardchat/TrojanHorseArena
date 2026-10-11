@@ -757,3 +757,9 @@ Shane, Grok chat, 8:36 AM CT (correction; supersedes the stopped 8:35 message �
 ## 2026-10-11 6:08 AM CT — R-010 ADA assembly seating (2,200 seats)
 - New: `research/R-010-ada-assembly-seating.md` (daily automation). 2010 ADA Table 221.2.1.1 → **18 wheelchair spaces** + **18 companion seats** for 2,200 (6 + ceil(1700/150)). Dispersion / lines of sight cited; no aisle geometry invented. MIX/telescopic (D-009): no alternate count in Standards; ASSUMED single 2,200 application. Alabama DCM adopts 2010 ADA. Feeds P2-A-103 / G-002. NEEDS ARCHITECT CONFIRMATION: YES. ICC 300 not read (paywalled).
 - P1 still waiting on support-wing data (D-002). Sheets in review unchanged. G-001 / set / PR on hold. Pulsar offline — STATUS via GitHub mirror only.
+
+## 2026-10-11 — SRM HQ look on the elevations + massing (Shane 2:57 PM CT, D-074)
+- P2-A-201 Rev L (phase2_elev_rev_l.yaml + new phase2_facade_srm.yaml): all four faces with continuous glass bands per level, board-formed concrete slab-edge bands at L1 / L2 17'-9" / rounded roof fascia, R 20 corners as curved bands, 30 ft drum = concrete cylinder with glass slots, south colonnade (Ø 1.5' @ 14.5', ASSUMED) + 12 ft cantilevered canopy (ASSUMED), crimson #CC0000 portal at the plan position, material legend. Rev K kept.
+- P2-A-901 Rev G (phase2_massing_rev_g.yaml): same skin in the shaded views (glass vs concrete bands, drum slots, colonnade + canopy, IMP pop-outs, crimson portal, rooftop solar ZONES ASSUMED / OPEN). Rev F kept.
+- Concrete / glass / solar hex ASSUMED (no concrete gray in the scripts). Heights unchanged (bay 16 ASSUMED, drum flush ASSUMED: SK-01 / SK-02 pending). No program or area change: GSF 86,964. Walk + portal at the plan position, not the concept image.
+

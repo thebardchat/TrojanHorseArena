@@ -1,0 +1,51 @@
+# phase2_facade_srm.yaml: SRM-HQ facade language (D-074) for P2-A-201 Rev L and P2-A-901 Rev G. Shane 2026-10-11 2:57 PM CT (KEYSTONE chat):
+# the sheets must show the SRM-HQ-modelled building (his concept aerial; real SRM HQ photos in /workspace/arena_refs, not in the repo).
+# The building look is wanted; the walk / portal placement in the concept image is NOT: plan walk + portal kept (D-043, D-046, D-066).
+# No new program or area: GSF unchanged 86,964 (A-101 Rev N / A-102 Rev I). Heights from params; facade band levels ASSUMED.
+meta:
+  source: "Shane 2026-10-11 2:57 PM CT, KEYSTONE chat (SRM HQ look on the elevations + massing, D-074)"
+heights:
+  l2_ff: {value: 17.75, status: DECIDED, source: "D-061"}
+  ring_roof: {value: 32.75, status: ASSUMED, source: "phase2_elev_rev_k.yaml heights.ring_roof"}
+  high_roof: {value: 42, status: ASSUMED, source: "phase2_elev_rev_k.yaml heights.arena_roof_top"}
+  bay: {value: 16, status: ASSUMED, source: "phase2_massing_rev_f.yaml bay (SK-01 pending)"}
+  drum_top: {value: 32.75, status: ASSUMED, note: "flush with the ring roof (SK-02 pending)", source: "phase2_studies_sk.yaml / P2-SK-02"}
+bands:   # horizontal bands on the 2-storey ring (z in ft above L1 FF); concrete = board-formed slab-edge bands, glass = continuous glazing
+  - {kind: concrete, z0: 0.0, z1: 1.5, label: "L1 floor / base band", status: ASSUMED, source: "KEYSTONE ASSUMED (SRM HQ language, D-074)"}
+  - {kind: glass, z0: 1.5, z1: 15.5, label: "L1 glass band", status: ASSUMED, source: "KEYSTONE ASSUMED (floor-to-deck glass, D-074)"}
+  - {kind: concrete, z0: 15.5, z1: 20.0, label: "L2 slab-edge band (L2 FF 17'-9\")", status: ASSUMED, source: "KEYSTONE ASSUMED around D-061 L2 FF"}
+  - {kind: glass, z0: 20.0, z1: 30.75, label: "L2 glass band", status: ASSUMED, source: "KEYSTONE ASSUMED (D-074)"}
+  - {kind: concrete, z0: 30.75, z1: 32.75, label: "rounded roof fascia", status: ASSUMED, source: "KEYSTONE ASSUMED (rounded roof edge, D-074)"}
+arena_fascia: {z0: 40.0, z1: 42.0, status: ASSUMED, note: "arena volume: board-formed concrete, rounded fascia at the 42 ft roof; no glass (ASSUMED)", source: "KEYSTONE ASSUMED (D-074)"}
+mullion_ft: {value: 5, status: ASSUMED, source: "KEYSTONE ASSUMED drafting module"}
+drum:
+  material: concrete
+  source: "Shane 2026-10-11 2:57 PM CT (concrete drum, D-074); slots ASSUMED"
+  slots: {count_visible: 3, width_ft: 2.5, z0: 2.0, z1: 30.75, every_nth_facet: 8, status: ASSUMED, note: "vertical glass slots in the concrete cylinder", source: "KEYSTONE ASSUMED (SRM HQ drum, Shane concept aerial 2026-10-11)"}
+colonnade:
+  x0: 84
+  x1: 142
+  source: "phase2_plan_rev_j.yaml level_2.open_below ob_lobby; Shane 2026-10-11 2:57 PM CT (colonnade)"
+  basis: "lobby front = ob_lobby x 84-142 on the south wall (phase2_plan_rev_j.yaml level_2.open_below)"
+  column_dia_ft: {value: 1.5, status: ASSUMED, source: "KEYSTONE ASSUMED (slender round columns, D-074)"}
+  spacing_ft: {value: 14.5, status: ASSUMED, note: "5 bays across the 58 ft lobby front", source: "KEYSTONE ASSUMED"}
+  canopy_depth_ft: {value: 12, status: ASSUMED, note: "cantilevered beyond the columns; portal stays 30 ft south (D-046)", source: "KEYSTONE ASSUMED"}
+  canopy_z: {z0: 14.5, z1: 16.0, status: ASSUMED, note: "one storey, below the L2 slab band", source: "KEYSTONE ASSUMED"}
+  column_line_y: {value: -10, status: ASSUMED, note: "columns 10 ft out from the south wall; canopy tip at -12", source: "KEYSTONE ASSUMED"}
+solar:
+  arena_inset_ft: 8
+  ring_inset_ft: 6
+  status: ASSUMED
+  note: "rooftop solar ZONES only (OPEN QUESTION, A-201 Rev F reviewer C-8); no array design or yield"
+  source: "Shane concept aerial 2026-10-11; KEYSTONE ASSUMED zones"
+colors:   # palette.py has no concrete gray -> concrete / glass / solar hex ASSUMED
+  concrete: {hex: "#C9C6BE", status: ASSUMED, note: "light-gray board-formed concrete (no concrete gray in the scripts)", source: "KEYSTONE ASSUMED swatch"}
+  glass: {hex: "#4F6A7D", status: ASSUMED, source: "KEYSTONE ASSUMED swatch"}
+  mullion: {hex: "#444444", note: "palette STEEL", source: "shared/palette.py STEEL"}
+  imp: {hex: "#B0B0B0", note: "palette LIGHT_GRAY; insulated metal panel (IMP) on the one-storey pop-outs (annex, mech / elec bay, bump-out), Summertown kits per D-074, IMP ASSUMED", source: "shared/palette.py LIGHT_GRAY; D-074"}
+  crimson: {hex: "#CC0000", note: "palette SCHOOL_RED; portal + accents", source: "shared/palette.py SCHOOL_RED"}
+  solar: {hex: "#2C3E5C", status: ASSUMED, source: "KEYSTONE ASSUMED swatch"}
+portal:
+  finish: crimson
+  basis: "crimson portal over the brick walk at the PLAN position (C-101 Rev H / A-201 Rev K), not the concept image position; gold trim kept (D-045)"
+  source: "Shane 2026-10-11 2:57 PM CT; D-043, D-045, D-046"

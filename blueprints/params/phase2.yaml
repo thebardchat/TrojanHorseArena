@@ -758,6 +758,12 @@ sheets:
         generator: phase2/src/p2_a_201_rev_k.py
         inputs: "params/phase2_elev.yaml + phase2_elev_rev_k.yaml + p2_plan_rev_n_geom.py (A-101 Rev N / A-102 Rev I)"
         source: "Shane 2026-10-09 1:23 PM CT (standard next step: Rev J showed the old outline, so Rev K)"
+      L:
+        file: P2-A-201_RevL
+        frozen: false
+        generator: phase2/src/p2_a_201_rev_l.py
+        inputs: "phase2_elev_rev_l.yaml + phase2_facade_srm.yaml (SRM HQ look, D-074) + p2_plan_rev_n_geom.py"
+        source: "Shane 2026-10-11 2:57 PM CT (sheets must show the SRM-HQ-modelled building; plan walk + portal kept)"
     source: "Shane 2026-10-04 5:27 AM CT"
   P2-A-301:
     title: BUILDING SECTIONS
@@ -966,6 +972,12 @@ sheets:
         generator: phase2/src/p2_a_901_rev_f.py
         inputs: "params/phase2_massing.yaml + phase2_massing_rev_f.yaml + phase2_site_rev_h.yaml + p2_plan_rev_n_geom.py (A-101 Rev N / A-102 Rev I)"
         source: "Shane 2026-10-09 1:23 PM CT (standard next step: current building in the massing; D-087 kept)"
+      G:
+        file: P2-A-901_RevG
+        frozen: false
+        generator: phase2/src/p2_a_901_rev_g.py
+        inputs: "Rev F inputs + phase2_massing_rev_g.yaml + phase2_facade_srm.yaml (SRM HQ look, D-074)"
+        source: "Shane 2026-10-11 2:57 PM CT (sheets must show the SRM-HQ-modelled building; plan walk + portal kept)"
     source: "Shane 2026-10-04 12:10 PM CT; BACKLOG P2-T-011"
 
 sets:
