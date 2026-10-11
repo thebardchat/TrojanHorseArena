@@ -2,13 +2,13 @@
   "agent": "KEYSTONE",
   "project": "Hazel Green Regional Athletic Complex / Trojan Horse Arena",
   "schema_version": 2,
-  "updated_at": "2026-10-10T06:05:37-05:00",
+  "updated_at": "2026-10-11T06:08:33-05:00",
   "health": "YELLOW",
   "active_phase": "P1+P2 (parallel; P1 jumps the line when its data arrives)",
   "phase1_percent": 50,
   "phase2_percent": 85,
   "current_ticket": "P2-T-017",
-  "current_ticket_title": "R-027 parking/land need (D-006) done; C-101 H / A-901 F / A-201 K (+ A-101 N) still in review",
+  "current_ticket_title": "R-010 ADA seating (18+18) done; sheets still in review; R-027 parking done",
   "sheets_done": [
     "P1-G-001 Rev E (principal, approved)",
     "P1-A-101 Rev A (approved, frozen); Rev C in review (D-088 / D-089; Rev B superseded)",
@@ -24,12 +24,12 @@
     "P2-A-201 Rev K (in review; Rev N outline; D-087 text kept)"
   ],
   "sheets_in_progress": [],
-  "last_commit": "3beb694",
+  "last_commit": "692ac71",
   "branch": "grok/keystone",
   "open_decisions": 16,
   "blocked_on": "P1: support-wing data + photos (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). G-001 / set / PR on hold.",
-  "what_changed": "R-027: Madison County AL has NO zoning parking minimum (FAQ). Planning 550 spectator spaces ASSUMED (Huntsville Art. 70 @ 1/4 of 2,200). ADA 11 / 2 van at 550. ~10-15 ac land stays ASSUMED.",
-  "what_to_verify": "Bay 16 ft + drum=ring ASSUMED. Parking 550 is Huntsville comparison only (D-006). Pulsar _KEYSTONE STATUS copy done 2026-10-10.",
+  "what_changed": "R-010: 2010 ADA Table 221.2.1.1 → 18 wheelchair + 18 companion seats for 2,200. Dispersion cited; MIX count ASSUMED single bowl. Architect confirm.",
+  "what_to_verify": "Bay 16 ft + drum=ring ASSUMED. Parking 550 Huntsville comparison only (D-006). Pulsar offline 2026-10-11 — STATUS via GitHub mirror only.",
   "next_action": "Shane reviews C-101 H, A-901 F, A-201 K (+ A-101 N, A-102 I, G-003 N) and P1-G-002 Rev B band. G-001 / set / PR on hold.",
   "question_for_shane": "Which band (Low / Mid / High)? Mid and High exceed the $40k school-board bid threshold (MEDIUM): OK to plan a bid?"
 }
