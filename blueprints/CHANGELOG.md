@@ -1,5 +1,10 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-12 ~6:10 AM CT — R-011 Title IX locker room parity (daily automation)
+- New: `research/R-011-title-ix-locker-parity.md`. 34 CFR 106.33 (separate locker rooms allowed, must be **comparable**) + 106.41(c)(7); 1979 Policy Interpretation six factors (quality / availability / exclusivity / locker availability / locker quality / maintenance / preparation). Part 106 as recodified by 91 FR 61308 (effective 2026-09-29); EO 14201 noted.
+- Applicability (D-028 / D-007): private, non-federally-funded building is not itself a recipient; a school (recipient) that uses it carries the parity duty (106.41(c)(7), 106.31(b)(6) / (d)). Ala. Code § 16-1-54 is limited to public K-12 school buildings by its text. No SF / fixtures / sizes set; boys / girls drawn equal (D-013 rule) already meets "comparable" on size. NEEDS ARCHITECT CONFIRMATION: YES. ED / OCR pages blocked direct fetch: quoted via search index.
+- No sheets, params or decisions changed. P2-T-012 Set Rev F + CAD zips still in review (SK-01 / SK-02). P1 still waits on support-wing data (D-002).
+
 ## 2026-10-11 ~7:35 PM CT · D-090 colonnade + cleanups + Set Rev F + CAD zips (Shane 7:19 / 7:20 PM CT)
 - **D-090** (F1 approved): colonnade re-spaced 2 + 2 about the open entry / portal centre line, x 75.75 / 90.25 / 135.75 / 150.25; 45.5 ft centre bay (inner faces on the portal outer faces x 91 / 135), 14.5 ft sides, ASSUMED (`params/phase2_colonnade_rev_b.yaml`, `p2_colonnade_b.py`). E1 clear: centre bay 528 in, 582 in in front of the bank, whole front 840 in vs 512 in: PASS.
 - **New sheets** (new generators; earlier revisions untouched): `P2-A-201_RevM`, `P2-A-901_RevH` (+ OBJ / MTL), `P2-A-301_RevF` (cut now in the open bay, column beyond), `P2-A-111_RevF`, `P2-G-002_RevG` (F1 closed; `p2_egress_rev_n.use_colonnade_b()` is additive), `P2-G-001_RevE` (index of current revisions, Set Rev F). A-101 / C-101 do not show columns: not revised.
