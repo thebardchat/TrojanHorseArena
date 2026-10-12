@@ -154,3 +154,21 @@ if __name__ == "__main__":
     for c in CHK:
         print(c)
     print(FLAGS, [(s[0], round(s[1]), s[3]) for s in SP])
+
+
+def use_colonnade_b():
+    """D-090 (params/phase2_colonnade_rev_b.yaml): re-spaced colonnade, entry centre line open. Recomputes the colonnade numbers in place;
+    callers: P2-A-111 Rev F, P2-G-002 Rev G (Rev E / F output unchanged because they never call this)."""
+    global COL_X, gaps, COL_CLEAR_IN, COL_GAP_FT, NCOL, CENTRE_CLEAR_IN, FRONT_CLEAR_IN, ON_AXIS
+    import p2_colonnade_b as cb
+    COL_X = list(cb.COLS)
+    NCOL = len(COL_X) - 1
+    gaps = [(COL_X[k + 1] - COL_X[k] - COL_D) for k in range(NCOL)]
+    COL_CLEAR_IN = sum(gaps) * 12
+    COL_GAP_FT = min(gaps)
+    CENTRE_CLEAR_IN = max(gaps) * 12
+    b0, b1 = 87.25, 138.75                       # E1 bank
+    blocked = sum(max(0.0, min(b1, x + COL_D / 2) - max(b0, x - COL_D / 2)) for x in COL_X)
+    FRONT_CLEAR_IN = ((b1 - b0) - blocked) * 12
+    ON_AXIS = any(abs(x - cb.CX) < COL_D for x in COL_X)
+    FLAGS["colonnade"] = CENTRE_CLEAR_IN >= E1_IN and FRONT_CLEAR_IN >= E1_IN and not ON_AXIS

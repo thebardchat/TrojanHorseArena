@@ -491,6 +491,12 @@ sheets:
         inputs: "INDEX in the generator (current revisions only); p2_egress_rev_n.py"
         note: "Revs A-C (Set Rev A-D covers) from handoff_2026-10-04/p2_g_001.py (Pulsar sync), not regenerated here"
         source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
+      E:
+        file: P2-G-001_RevE
+        frozen: false
+        generator: phase2/src/p2_g_001_rev_e.py
+        inputs: "INDEX in the generator (current revisions only)"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 (cover, handoff_2026-10-04); Rev D Shane 2026-10-11 6:53 PM CT"
   P2-G-003:
     title: PROGRAM TEST-FIT
@@ -777,6 +783,12 @@ sheets:
         generator: phase2/src/p2_a_201_rev_l.py
         inputs: "phase2_elev_rev_l.yaml + phase2_facade_srm.yaml (SRM HQ look, D-074) + p2_plan_rev_n_geom.py"
         source: "Shane 2026-10-11 2:57 PM CT (sheets must show the SRM-HQ-modelled building; plan walk + portal kept)"
+      M:
+        file: P2-A-201_RevM
+        frozen: false
+        generator: phase2/src/p2_a_201_rev_m.py
+        inputs: "phase2_elev_rev_m.yaml + phase2_facade_srm.yaml + phase2_colonnade_rev_b.yaml"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 5:27 AM CT"
   P2-A-301:
     title: BUILDING SECTIONS
@@ -809,6 +821,12 @@ sheets:
         generator: phase2/src/p2_a_301_rev_e.py
         inputs: "Rev D inputs (tiers unchanged) + p2_plan_rev_n_geom.py + phase2_facade_srm.yaml"
         source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: stale sheets to the current design; sections show the drum and SRM bands)"
+      F:
+        file: P2-A-301_RevF
+        frozen: false
+        generator: phase2/src/p2_a_301_rev_f.py
+        inputs: "Rev E inputs + phase2_colonnade_rev_b.yaml"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 6:45 AM CT"
   P2-A-302:
     title: SIGHT-LINE STUDY
@@ -903,6 +921,12 @@ sheets:
         generator: phase2/src/p2_g_002_rev_f.py
         inputs: "p2_egress_rev_n.py (p2_plan_rev_n_geom.py + phase2_facade_srm.yaml)"
         source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
+      G:
+        file: P2-G-002_RevG
+        frozen: false
+        generator: phase2/src/p2_g_002_rev_g.py
+        inputs: "p2_egress_rev_n.py use_colonnade_b()"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 10:48 AM CT; BACKLOG P2-T-007"
   P2-A-111:
     title: LIFE SAFETY PLAN (SCHEMATIC) — LEVELS 1 + 2
@@ -932,6 +956,12 @@ sheets:
         inputs: "p2_egress_rev_n.py (p2_plan_rev_n_geom.py + phase2_facade_srm.yaml + phase2_site.yaml portal)"
         note: "Rev D = Set Rev D (handoff_2026-10-04, ARENA)"
         source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
+      F:
+        file: P2-A-111_RevF
+        frozen: false
+        generator: phase2/src/p2_a_111_rev_f.py
+        inputs: "p2_egress_rev_n.py use_colonnade_b()"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 11:07 AM CT"
   P2-A-401:
     title: ENLARGED PLANS — EVENT LOCKER ROOMS 1-4
@@ -954,6 +984,13 @@ sheets:
         frozen: false
         inputs: "params/phase2_enlarged_rev_c.yaml + params/phase2_plan_rev_i.yaml + params/phase2_code_rev_b.yaml"
         source: "Shane 2026-10-04 3:31 PM CT (D-069 CLOSED = Option 2: second restroom pair in a one-storey bump-out opposite the lobby core; east concourse + SW FLEX unchanged, D-039); new core 2 enlarged plan; fixture split lobby core + core 2 = chairs-only"
+      E:
+        file: P2-A-401_RevE
+        frozen: false
+        generator: phase2/src/p2_a_401_rev_e.py
+        inputs: "phase2_enlarged_rev_d.yaml (handoff_2026-10-04) + phase2_plan_rev_j.yaml + p2_plan_rev_n_geom.py key plan"
+        note: "Rev D = Set Rev D (handoff, ARENA); Rev E = same numbers, key plan on the current outline"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 11:24 AM CT; BACKLOG P2-T-010"
   P2-A-103:
     title: FLOOR OVERLAYS — MATS, SEATING + FLOOR CONVERSIONS
@@ -971,6 +1008,13 @@ sheets:
         frozen: false
         inputs: "params/phase2_overlays_rev_b.yaml + params/phase2_plan_rev_h.yaml + params/phase2_code_rev_b.yaml"
         source: "Shane 2026-10-04 1:21-1:22 PM CT (D-054 chairs-only, D-064 Option 2, D-065 Option 1, D-066 40 ft walk, D-067 storage room); chairs-only design case, posted loads, storage annex route"
+      E:
+        file: P2-A-103_RevE
+        frozen: false
+        generator: phase2/src/p2_a_103_rev_e.py
+        inputs: "phase2_overlays_rev_e.yaml (over rev_d / rev_c, handoff_2026-10-04) + phase2_code_rev_d.yaml"
+        note: "Revs C / D = Set Rev C / D (handoff, ARENA); Rev E = Rev D with current sheet references"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 11:45 AM CT; BACKLOG P2-T-005"
   P2-A-901:
     title: 3D MASSING MODEL — VIEWS
@@ -1010,6 +1054,12 @@ sheets:
         generator: phase2/src/p2_a_901_rev_g.py
         inputs: "Rev F inputs + phase2_massing_rev_g.yaml + phase2_facade_srm.yaml (SRM HQ look, D-074)"
         source: "Shane 2026-10-11 2:57 PM CT (sheets must show the SRM-HQ-modelled building; plan walk + portal kept)"
+      H:
+        file: P2-A-901_RevH
+        frozen: false
+        generator: phase2/src/p2_a_901_rev_h.py
+        inputs: "phase2_massing_rev_h.yaml + phase2_facade_srm.yaml + phase2_colonnade_rev_b.yaml"
+        source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
     source: "Shane 2026-10-04 12:10 PM CT; BACKLOG P2-T-011"
 
 sets:

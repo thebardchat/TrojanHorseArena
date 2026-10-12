@@ -1,0 +1,79 @@
+# phase2_enlarged_rev_d.yaml: P2-A-401 Rev D overrides (Phase 2). Read by phase2/src/p2_a_401.py --rev D together with
+# params/phase2_enlarged.yaml (Rev A: the 4 event locker rooms, unchanged, approved D-068).
+# Rev D, 2026-10-04 evening (Shane, D-072; Claude Code session): plan Rev J. Core 2 is reached only from the 8 ft PUBLIC CORRIDOR (E)
+# (Concourse (E) north, behind the tier line); EXIT (E) clear; X11 off the corridor. WOMEN (2) in the bump-out (now y 119.09-175.09,
+# entirely south of EXIT (E)), MEN (2) + DF / JAN. in the old Mech (E) strip, MECH (E2) in the north part of the bump-out.
+# Test-fit frames (rot: true = frame x runs along plan y): entry always on the frame y = 0 wall = the wall facing the public corridor.
+#   women: frame x = north from y 119.09, frame y = east from the building wall x 210 (entry on the west wall, from the corridor)
+#   men:   frame x = south from y 134.18, frame y = west from the corridor wall x 202 (entry on the east wall, onto the corridor)
+# Rev C inputs stay in phase2_enlarged_rev_c.yaml (A-401 Rev C on HOLD, D-071).
+
+meta:
+  revision: D
+  file: P2-A-401_RevD
+  title_block: "ENLARGED PLANS\nLOCKER RMS + RESTROOM CORE 2"
+  drawn_by: "Drawn by Claude (AI) for Shane Brazelton"
+  scale_text: "1/8\" = 1'-0\" (rooms) · 1\" = 22'-0\" (core 2)"
+  source: "Shane 2026-10-04 evening (D-072 GO: A-401 Rev D)"
+
+basis:
+  plan: params/phase2_plan_rev_j.yaml
+  rooms_note: "Locker rooms 1-4 unchanged from Rev A (approved D-068); envelopes identical on plan Rev J; rooms 3-4 exit X7 back on the building wall (EXIT (E), D-072)"
+  source: "phase2_plan_rev_j.yaml (evl_1..4 rects = Rev G-I); D-068; D-072"
+
+core:
+  scale_ft_per_in: 22
+  load_source: "p2_testfit.compute_rev_k: fx1c (chairs-only 3,446; IBC 2021 T2902.1) and prog rev_k.fixture_split (lobby core + core 2)"
+  modules:
+    wc_std: {w: 3.0, d: 5.0, label: "", source: "IPC 2021 405.3.1: compartment >= 30 x 60 in (floor-mounted); 36 in wide ASSUMED"}
+    wc_amb: {w: 3.0, d: 5.0, label: "AMB", source: "ADA 2010 604.8.2: ambulatory 35-37 in wide x >= 60 in deep; required where >= 6 WC + urinals in the room (213.3.1)"}
+    wc_acc: {w: 5.0, d: 5.0, label: "A", source: "ADA 2010 604.8.1.1: wheelchair compartment >= 60 in wide x 56 in (wall-hung) / 59 in (floor) deep"}
+    urinal: {w: 2.5, d: 2.0, label: "", source: "IPC 2021 405.3.1 (30 in c/c, 15 in to a side wall) and 405.3.5 (partitions >= 18 in from the wall)"}
+    urinal_acc: {w: 2.5, d: 2.0, label: "A", source: "ADA 2010 213.3.3 (more than 1 urinal: 1 per 605), rim <= 17 in, 30 x 48 in forward clear (605.3)"}
+    lav: {w: 2.5, d: 2.0, source: "30 in c/c ASSUMED (IPC 2021 405.3.1: 15 in to a side wall, 21 in clear in front); 1 accessible per room (ADA 213.3.4, 606: rim <= 34 in, 30 x 48 forward)"}
+  aisle_ft: 6
+  aisle_source: "aisles >= 6 ft ASSUMED: >= 60 in turning circle (ADA 304.3.1) and >= 21 in in front of fixtures (IPC 405.3.1)"
+  allowance: 0.10
+  allowance_source: "+10 % for walls, plumbing chases and the entry maze, ASSUMED"
+  rooms:
+    women:
+      name: "WOMEN (2) — CORE 2"
+      drawn_id: rr_wb
+      rot: true
+      L: 33
+      W: 29
+      entry: [2, 7]
+      lav: {n: 7, y0: 10, source: "Claude test-fit (ASSUMED layout): counter on the south wall, clear of the entry"}
+      rows:
+        - {y: [0, 5], x0: 7, face: N, items: [[wc_std, 8]], source: "Claude test-fit (ASSUMED layout)"}
+        - {y: [11, 16], x0: 7, face: S, items: [[wc_std, 8]], source: "Claude test-fit (ASSUMED layout)"}
+        - {y: [17, 22], x0: 7, face: N, items: [[wc_acc, 1], [wc_amb, 1], [wc_std, 6]], source: "Claude test-fit (ASSUMED layout)"}
+      blocks:
+        - {rect: [7, 16, 31, 17], label: "", kind: chase, source: "Claude test-fit (ASSUMED layout)"}
+      turn: [4.5, 24]
+      source: "Claude test-fit (ASSUMED layout) from the module minimums above: 3 rows x 8 = 24 WC (core-2 share, phase2_program.yaml rev_k); aisles 6 ft and 7 ft"
+    men:
+      name: "MEN (2) — CORE 2"
+      drawn_id: rr_mb
+      rot: true
+      L: 25.5
+      W: 13
+      entry: [2.5, 7.5]
+      lav: {n: 5, y0: 0.25, source: "KEYSTONE test-fit (Rev C, unchanged; turned to face the corridor)"}
+      rows:
+        - {y: [0, 5], x0: 8, face: N, items: [[wc_acc, 1], [wc_amb, 1], [wc_std, 3]], source: "KEYSTONE test-fit (Rev C)"}
+        - {y: [11, 13], x0: 8, face: S, items: [[urinal_acc, 1], [urinal, 6]], source: "KEYSTONE test-fit (Rev C)"}
+      blocks: []
+      turn: [5, 8]
+      source: "KEYSTONE test-fit (Rev C layout, turned 90° into the 14 x 26 ft room in the old Mech (E) strip); 5 WC + 7 urinals = 12 WC-equivalents, urinals <= 67 % (IPC 2021 424.2)"
+  df_jan: {drawn_id: df_jan, df: 2, note: "hi-lo drinking fountain pair in an alcove open to the public corridor (ADA 2010 211.2, 602) + janitor / service sink (1 per level, T2902.1)", source: "Shane 3:31 PM CT (4 DF total); D-072 layout"}
+  corridor: {zone_id: pc_e, width_ft: 8, note: "PUBLIC CORRIDOR (E), 8 ft, Concourse (E) -> core 2 behind the tier line; restroom + DF doors open only onto it; X11 off it", source: "plan Rev J zones.pc_e; IBC 2021 T1020.3, 1020.5, 1006.2.1; D-072"}
+  strip_sf: 1720
+  strip_note: "old MECH (E) strip x 188-210, y 56-134.18 = 22 x 78.18 = 1,720 SF (plan Rev I room 16)"
+  why: "WHY THE CORRIDOR (D-072): on plan Rev I the public reached core 2 only through V2 / EXIT (E) — across the event floor, with restroom queues in the exit passage. Rev J slides the bump-out 42 ft south (entirely south of EXIT (E)) and adds an 8 ft public corridor from Concourse (E), behind the tier line: restroom doors open only onto it, EXIT (E) stays clear, and X11 gives the corridor its own exit (common path 61 ft <= 75)."
+  why_source: "Shane 2026-10-04 evening (D-072); plan Rev J"
+  mep: "MEP (OPEN): Mech (E) 1,720 -> 674.5 SF + MECH (E2) 660 SF; total mech ≈ 3,496 SF = 4.1 % of 85,793 GSF vs 5 % planning (R-014). Engineer to confirm; the storage annex (north) can absorb more later. Plumbing: men's (strip) and women's (bump-out) wet walls meet across the corridor; waste / vent under slab (ASSUMED)."
+  mep_source: "Shane 2026-10-04 evening (D-072: Mech (E) to 675 SF accepted at schematic; MEP open item); R-014"
+  source: "Shane 2026-10-04 evening (D-072); IBC 2021 T2902.1, 2902.3.3; IPC 2021 405.3.1, 405.3.5, 424.2 (UpCodes, retrieved 2026-10-04); ADA 2010 211.2, 213.3, 304.3, 604.8, 605, 606"
+
+source: "Claude 2026-10-04 (Shane evening, D-072); params/phase2_enlarged.yaml; params/phase2_plan_rev_j.yaml; phase2_program.yaml rev_k"

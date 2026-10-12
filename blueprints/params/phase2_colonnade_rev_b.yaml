@@ -1,0 +1,13 @@
+# phase2_colonnade_rev_b.yaml: re-spaced south colonnade (D-090, Shane 2026-10-11 7:19 PM CT, approving G-002 Rev F finding F1).
+# The main-entry / portal centre line (x 113) is OPEN: columns symmetric about it, 2 per side, with a wider centre bay whose column inner
+# faces line up with the portal's outer faces (x 91 / 135, phase2_site.yaml portal 44 ft wide) and frame the 40 ft walk (D-066) and the
+# centre door pairs. Side bays keep the Rev L 14.5 ft spacing. All spacing ASSUMED. Dia, depth, heights and line as phase2_facade_srm.yaml.
+meta:
+  decision: D-090
+  source: "Shane 2026-10-11 7:19 PM CT, KEYSTONE chat (approve F1: shift the colonnade so the entry / portal centre line is open)"
+centre_x: {value: 113, source: "E1 bank centre = portal centre_x (phase2_site.yaml portal; A-101 Rev N E1 at 113)"}
+column_dia_ft: {value: 1.5, source: "phase2_facade_srm.yaml colonnade.column_dia_ft (ASSUMED)"}
+centre_bay_clear_ft: {value: 44, status: ASSUMED, note: "column inner faces at x 91 / 135 = portal outer faces (44 ft portal)", source: "phase2_site.yaml portal width 44; D-090"}
+side_bay_ft: {value: 14.5, status: ASSUMED, note: "centre-to-centre, as the Rev L spacing", source: "phase2_facade_srm.yaml colonnade.spacing_ft"}
+per_side: {value: 2, status: ASSUMED, note: "even count per side (Shane 7:19 PM)", source: "D-090"}
+canopy_overhang_ft: {value: 4, note: "canopy runs 4 ft past the end columns, as A-201 Rev L / A-901 Rev G", source: "p2_a_201_rev_l.py colonnade()"}
