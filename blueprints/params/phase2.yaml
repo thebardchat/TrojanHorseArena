@@ -479,6 +479,19 @@ open_items:
   source: "D-007, D-008, D-012, D-009, D-011, D-028, D-030, D-031, D-032; Shane 2026-10-03 10:45 PM + 11:09 PM + 11:26 PM CT; Shane 2026-10-04 4:30 AM CT (D-009); Shane 2026-10-04 4:43 AM CT (D-033, D-034)"
 
 sheets:
+  P2-G-001:
+    title: COVER SHEET + SHEET INDEX
+    size: "17 x 11 in (tabloid), landscape"
+    inputs: "index in phase2/src/p2_g_001_rev_d.py; numbers from p2_plan_rev_n_geom.py + p2_egress_rev_n.py"
+    revisions:
+      D:
+        file: P2-G-001_RevD
+        frozen: false
+        generator: phase2/src/p2_g_001_rev_d.py
+        inputs: "INDEX in the generator (current revisions only); p2_egress_rev_n.py"
+        note: "Revs A-C (Set Rev A-D covers) from handoff_2026-10-04/p2_g_001.py (Pulsar sync), not regenerated here"
+        source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
+    source: "Shane 2026-10-04 (cover, handoff_2026-10-04); Rev D Shane 2026-10-11 6:53 PM CT"
   P2-G-003:
     title: PROGRAM TEST-FIT
     size: "17 x 11 in (tabloid), landscape (Shane 10:45 PM CT; set sheets stay ARCH D)"
@@ -790,6 +803,12 @@ sheets:
         frozen: false
         inputs: "params/phase2_sect.yaml (incl. rev_b + rev_c + rev_d) + params/phase2_elev.yaml + params/phase2_plan_rev_f.yaml"
         source: "Shane 2026-10-04 10:27 AM CT (D-061 Option B: A-301 Rev D L2 17'-9\", ring roof 32.75', 21 in risers, front row 9.0 ft / 7'-6\" clear; C-5 REFERENCE label for the 25' clear; C-7 intermediate handrails on the 76 in stairs, architect to confirm)"
+      E:
+        file: P2-A-301_RevE
+        frozen: false
+        generator: phase2/src/p2_a_301_rev_e.py
+        inputs: "Rev D inputs (tiers unchanged) + p2_plan_rev_n_geom.py + phase2_facade_srm.yaml"
+        source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: stale sheets to the current design; sections show the drum and SRM bands)"
     source: "Shane 2026-10-04 6:45 AM CT"
   P2-A-302:
     title: SIGHT-LINE STUDY
@@ -878,6 +897,12 @@ sheets:
         inputs: "p2_a_102_rev_g.py geometry (phase2_plan_rev_i.yaml + _rev_k + _rev_g_l2)"
         note: "exit recheck for A-101 K / A-102 G; finding F1 closed by D-081; approval of Rev E itself not logged. Revs C / D (Set Rev D) still in handoff_2026-10-04/keystone_repo.patch"
         source: "Shane 2026-10-09 (D-080: 'approve Rev G, do the exit recheck'); Claude Code session, synced from origin/main in P2-T-017"
+      F:
+        file: P2-G-002_RevF
+        frozen: false
+        generator: phase2/src/p2_g_002_rev_f.py
+        inputs: "p2_egress_rev_n.py (p2_plan_rev_n_geom.py + phase2_facade_srm.yaml)"
+        source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
     source: "Shane 2026-10-04 10:48 AM CT; BACKLOG P2-T-007"
   P2-A-111:
     title: LIFE SAFETY PLAN (SCHEMATIC) — LEVELS 1 + 2
@@ -900,6 +925,13 @@ sheets:
         frozen: false
         inputs: "params/phase2_life_safety_rev_c.yaml + params/phase2_plan_rev_i.yaml + params/phase2_code_rev_b.yaml"
         source: "Shane 2026-10-04 3:31 PM CT (D-069 CLOSED = Option 2: second restroom pair in a one-storey bump-out opposite the lobby core; east concourse + SW FLEX unchanged, D-039); recheck travel, common path and exit separation with the bump-out"
+      E:
+        file: P2-A-111_RevE
+        frozen: false
+        generator: phase2/src/p2_a_111_rev_e.py
+        inputs: "p2_egress_rev_n.py (p2_plan_rev_n_geom.py + phase2_facade_srm.yaml + phase2_site.yaml portal)"
+        note: "Rev D = Set Rev D (handoff_2026-10-04, ARENA)"
+        source: "Shane 2026-10-11 6:53 PM CT (P2-T-012 go: emailable package of the new design; stale sheets to the current design)"
     source: "Shane 2026-10-04 11:07 AM CT"
   P2-A-401:
     title: ENLARGED PLANS — EVENT LOCKER ROOMS 1-4

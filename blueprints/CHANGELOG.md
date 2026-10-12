@@ -1,5 +1,12 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-11 ~7:05 PM CT · P2-T-012 · emailable package of the new design (Shane 6:53 PM CT)
+- **New sheets** (new generators, params first, PRELIMINARY): `P2-G-001_RevD` (`p2_g_001_rev_d.py`: index of CURRENT revisions only, D-074 SRM, D-087 no bus loop, open decisions SK-01 / SK-02 / mech 4.95 % / east-face glazing, contact Shane Brazelton 256-508-4608, brazeltonshane@gmail.com); `P2-G-002_RevF` (`p2_g_002_rev_f.py`) and `P2-A-111_RevE` (`p2_a_111_rev_e.py`), both from the new shared `p2_egress_rev_n.py` (egress on A-101 Rev N / A-102 Rev I); `P2-A-301_RevE` (`p2_a_301_rev_e.py` = Rev D path + annex / bump-out cuts, 30 ft drum beyond, SRM skin strip, colonnade + canopy, current outline on the key plan; 1" = 40').
+- **Egress recheck (Rev N):** L1 fixed load 1,468 (Rev E 1,467: bay + MECH remote), L2 worst 1,460; design case 5,274 occupants, need 791.1 in vs 1,216 provided, E1 395.6 vs 512; stairs 292.0 vs 304 in; L1 worst point 111 ft direct; L2 160 ft; common path 61 / 30 ft; dead end 5.2 ft; stair separation 141 vs 109 ft; all 12 openings on straight walls / drum. All PASS. Rev E finding F1 closed by D-082.
+- **Findings (not redesigned):** F1 a colonnade column (A-201 Rev L, ASSUMED 14.5 ft spacing) sits on the E1 / portal axis, 10 ft out; clear width 624 in vs 512 in passes; options keep / even column count / wider centre bay. F2 X6 discharge at the NE corner (drum to bay 3 ft): confirm grading (D-006).
+- **Not revised (current):** A-302 Rev C (bowl sight lines only, tiers unchanged), A-401 Rev D (core 2 = D-072 = D-084; locker areas unchanged; only its small key plan shows the old rectangle), A-103 Rev D (event-floor overlays; no outline drawn).
+- **Combined sets** (`shared/merge_set.py`: pdfunite + fixed trailer /ID, same bytes every run): `phase2/out/pdf/THA_Phase2_Set_RevE.pdf` (15 sheets in index order incl. SK-01 / SK-02 appendix, 1,008,751 bytes) and `phase1/out/pdf/THA_Phase1_Set_RevA.pdf` (P1-G-001 Rev E, P1-A-101 Rev C, P1-P-001 Rev A, P1-G-002 Rev B; 205,080 bytes). No PR, nothing emailed.
+
 
 ## 2026-10-10 ~6:15 AM CT — R-027 Madison County AL parking / land need (D-006)
 - New: `research/R-027-madison-county-parking-land-need.md`. Unincorporated Madison County AL: **no zoning parking minimum** (county Commercial Inspection FAQ; same finding as R-006). Commercial Site Plan + IFC apparatus access (26 ft along long side) still required.
