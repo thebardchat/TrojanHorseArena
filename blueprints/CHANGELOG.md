@@ -1,5 +1,10 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-13 ~6:10 AM CT — R-013 Southeast athletic $/SF (daily automation)
+- New: `research/R-013-southeast-athletic-cost-per-sf.md`. Order-of-magnitude **building-only** $/SF for Southeast comps + guides (dated, cited). Recommended Hazel Green / Huntsville bands **LOW $215 / MID $260 / HIGH $340** — **aligns with R-025**; no full ROM re-run; GSF note 86,964 (Set Rev F) vs R-025's 85,793.
+- Cites: RSMeans gym 2019 + Turner Q2 2019/2026 + Huntsville CCI 85.2; APX / Terrapin 2026 guides localized; Elberta AL (~$230/SF), Caledonia MS (~$281/SF), Westminster SC opinion ($289 all-in / $170 shell), Montevallo AL contract (~$361/SF, may include site). St. Pete Beach estimator page 404 — not used. D-012 / D-006 remain OPEN. NEEDS ARCHITECT / ESTIMATOR CONFIRMATION: YES.
+- No sheets, params or decisions changed. P2-T-012 Set Rev F + CAD zips still in review (SK-01 / SK-02). P1 still waits on support-wing data (D-002). R-001..R-013 prompt queue now filled.
+
 ## 2026-10-12 ~6:10 AM CT — R-011 Title IX locker room parity (daily automation)
 - New: `research/R-011-title-ix-locker-parity.md`. 34 CFR 106.33 (separate locker rooms allowed, must be **comparable**) + 106.41(c)(7); 1979 Policy Interpretation six factors (quality / availability / exclusivity / locker availability / locker quality / maintenance / preparation). Part 106 as recodified by 91 FR 61308 (effective 2026-09-29); EO 14201 noted.
 - Applicability (D-028 / D-007): private, non-federally-funded building is not itself a recipient; a school (recipient) that uses it carries the parity duty (106.41(c)(7), 106.31(b)(6) / (d)). Ala. Code § 16-1-54 is limited to public K-12 school buildings by its text. No SF / fixtures / sizes set; boys / girls drawn equal (D-013 rule) already meets "comparable" on size. NEEDS ARCHITECT CONFIRMATION: YES. ED / OCR pages blocked direct fetch: quoted via search index.
