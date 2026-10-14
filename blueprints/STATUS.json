@@ -2,7 +2,7 @@
   "agent": "KEYSTONE",
   "project": "Hazel Green Regional Athletic Complex / Trojan Horse Arena",
   "schema_version": 2,
-  "updated_at": "2026-10-14T06:19:15-05:00",
+  "updated_at": "2026-10-14T18:58:50-05:00",
   "health": "YELLOW",
   "active_phase": "P1+P2 (parallel; P1 jumps the line when its data arrives)",
   "phase1_percent": 50,
@@ -22,7 +22,7 @@
     "Research: R-001..R-028 (R-028 scaled sustainability added 2026-10-14; R-001..R-013 prompt queue filled)"
   ],
   "sheets_in_progress": [],
-  "last_commit": "6ef658e",
+  "last_commit": "feb1203",
   "branch": "grok/keystone",
   "open_decisions": 16,
   "blocked_on": "P1: support-wing data + photos (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). PR on hold.",
