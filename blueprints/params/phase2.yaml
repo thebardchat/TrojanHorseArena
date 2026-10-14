@@ -497,6 +497,12 @@ sheets:
         generator: phase2/src/p2_g_001_rev_e.py
         inputs: "INDEX in the generator (current revisions only)"
         source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
+      F:
+        file: P2-G-001_RevF
+        frozen: false
+        generator: phase2/src/p2_g_001_rev_f.py
+        inputs: "INDEX in the generator + phase2_sustainability.yaml"
+        source: "Shane 2026-10-14 6:52 PM CT (D-091 solar CUT, D-092 rainwater, D-093 LED + daylighting; R-028)"
     source: "Shane 2026-10-04 (cover, handoff_2026-10-04); Rev D Shane 2026-10-11 6:53 PM CT"
   P2-G-003:
     title: PROGRAM TEST-FIT
@@ -789,6 +795,12 @@ sheets:
         generator: phase2/src/p2_a_201_rev_m.py
         inputs: "phase2_elev_rev_m.yaml + phase2_facade_srm.yaml + phase2_colonnade_rev_b.yaml"
         source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
+      N:
+        file: P2-A-201_RevN
+        frozen: false
+        generator: phase2/src/p2_a_201_rev_n.py
+        inputs: "phase2_elev_rev_n.yaml + phase2_sustainability.yaml"
+        source: "Shane 2026-10-14 6:52 PM CT (D-091 solar CUT, D-092 rainwater, D-093 LED + daylighting; R-028)"
     source: "Shane 2026-10-04 5:27 AM CT"
   P2-A-301:
     title: BUILDING SECTIONS
@@ -1060,6 +1072,12 @@ sheets:
         generator: phase2/src/p2_a_901_rev_h.py
         inputs: "phase2_massing_rev_h.yaml + phase2_facade_srm.yaml + phase2_colonnade_rev_b.yaml"
         source: "Shane 2026-10-11 7:19 PM CT (D-090: colonnade re-spaced, entry / portal centre line open; cleanups A-401 / A-103)"
+      I:
+        file: P2-A-901_RevI
+        frozen: false
+        generator: phase2/src/p2_a_901_rev_i.py
+        inputs: "phase2_massing_rev_i.yaml + phase2_sustainability.yaml"
+        source: "Shane 2026-10-14 6:52 PM CT (D-091 solar CUT, D-092 rainwater, D-093 LED + daylighting; R-028)"
     source: "Shane 2026-10-04 12:10 PM CT; BACKLOG P2-T-011"
 
 sets:

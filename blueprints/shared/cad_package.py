@@ -2,7 +2,7 @@
 """CAD package for a combined set (Shane 2026-10-11 7:20 PM CT): sheet DXFs as drawn (sheet inches) + plan DXFs re-scaled to real feet
 (model space, origin = building / room grid 0,0) + optional OBJ / MTL + README_CAD.txt, zipped deterministically (fixed dates, sorted).
 
-  python blueprints/shared/cad_package.py phase2|phase1      (run from the repo root; writes phase*/out/pdf/THA_Phase*_CAD_Rev*.zip)
+  python blueprints/shared/cad_package.py phase2|phase2g|phase1      (run from the repo root; writes phase*/out/pdf/THA_Phase*_CAD_Rev*.zip)
 """
 import io
 import os
@@ -28,6 +28,15 @@ SETS = {
         feet=[("P2-A-101_RevN", 1.05, 2.90, 1 / 40, (-70, -90, 330, 345)), ("P2-A-102_RevI", 1.05, 2.90, 1 / 40, (-70, -90, 330, 345)),
               ("P2-A-111_RevF", 1.15, 3.40, 1 / 40, (-70, -90, 330, 345))],
         model=[os.path.join(P2, "3d", "P2-A-901_RevH_massing.obj"), os.path.join(P2, "3d", "P2-A-901_RevH_massing.mtl")],
+        extra=[]),
+    "phase2g": dict(
+        zip="THA_Phase2_CAD_RevG.zip", set_name="Phase 2 Schematic Set Rev G (index = P2-G-001 Rev F; D-091 solar CUT, D-092, D-093)",
+        sheets=["P2-G-001_RevF", "P2-G-002_RevG", "P2-G-003_RevN", "P2-C-101_RevH", "P2-A-101_RevN", "P2-A-102_RevI", "P2-A-103_RevE",
+                "P2-A-111_RevF", "P2-A-201_RevN", "P2-A-301_RevF", "P2-A-302_RevC", "P2-A-401_RevE", "P2-A-901_RevI"],
+        dxf_dir=os.path.join(P2, "dxf"),
+        feet=[("P2-A-101_RevN", 1.05, 2.90, 1 / 40, (-70, -90, 330, 345)), ("P2-A-102_RevI", 1.05, 2.90, 1 / 40, (-70, -90, 330, 345)),
+              ("P2-A-111_RevF", 1.15, 3.40, 1 / 40, (-70, -90, 330, 345))],
+        model=[os.path.join(P2, "3d", "P2-A-901_RevI_massing.obj"), os.path.join(P2, "3d", "P2-A-901_RevI_massing.mtl")],
         extra=[]),
     "phase1": dict(
         zip="THA_Phase1_CAD_RevA.zip", set_name="Phase 1 Set Rev A (P1-G-001 Rev E, P1-A-101 Rev C, P1-P-001 Rev A, P1-G-002 Rev B)",
@@ -97,7 +106,7 @@ def main(which):
                            model=("\n".join("  " + os.path.basename(p) for p in c["model"]) or "  (none for this phase)"),
                            extra=("\n".join(c["extra"]) or "-"), layers=", ".join(sorted(lay)))
     files.append(("README_CAD.txt", readme.replace("\n", "\r\n").encode("utf-8")))
-    out = os.path.join(P2 if which == "phase2" else P1, "pdf", c["zip"])     # next to the combined set PDF
+    out = os.path.join(P2 if which.startswith("phase2") else P1, "pdf", c["zip"])     # next to the combined set PDF
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for name, data in sorted(files):

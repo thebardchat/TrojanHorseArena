@@ -1,0 +1,23 @@
+# phase2_sustainability.yaml: sustainability direction after R-028 (Shane 2026-10-14 6:52 PM CT, KEYSTONE chat). Design intent only: NOTHING SIZED.
+# Read by P2-A-901 Rev I, P2-A-201 Rev N, P2-G-001 Rev F. Mercedes-Benz Stadium figures in R-028 are inspiration only, never this project's numbers.
+meta:
+  source: "Shane 2026-10-14 6:52 PM CT, KEYSTONE chat (decisions on the R-028 items)"
+  research: "research/R-028-scaled-sustainability-hazel-green.md"
+solar:
+  decision: D-091
+  status: CUT
+  text: "Rooftop solar CUT: no solar design intent, no solar zones (supersedes the solar part of D-018 and the A-901 Rev G / H solar zones)"
+  source: "Shane 2026-10-14 6:52 PM CT; R-028.1 / R-028.2"
+rainwater:
+  decision: D-092
+  status: DECIDED (intent, unsized)
+  text: "Rainwater collection stays: roof rain capture for field irrigation, unsized; cistern size TBD with civil (IPC 2021 Ch. 13 nonpotable, as adopted in AL, R-028.3)"
+  source: "Shane 2026-10-14 6:52 PM CT; R-028.3 (S13, S16)"
+lighting_daylight:
+  decision: D-093
+  status: DECIDED (intent, unsized)
+  text: "LED lighting throughout + natural daylighting (clerestory / glass bands, skylights where code allows), unsized. Skylight code trigger: IECC 2015 C402.4.2 (spaces > 2,500 SF under a roof, ceiling > 15 ft) + daylight controls C402.4.2.1; compliance path TBD with the architect (R-028.4)"
+  source: "Shane 2026-10-14 6:52 PM CT; R-028.4 (S18), R-028.5 (S19)"
+not_drawn: "Not drawn: cistern, roof drains / leaders, skylights, light fixtures (all unsized, TBD with civil / architect / MEP)."
+short: "D-091 solar CUT (no zones). D-092 roof rain capture for field irrigation, cistern TBD with civil. D-093 LED throughout + daylighting (glass bands, skylights where code allows; IECC 2015 C402.4.2 trigger). All unsized, none modelled."
+source: "Shane 2026-10-14 6:52 PM CT, KEYSTONE chat; research/R-028-scaled-sustainability-hazel-green.md"
