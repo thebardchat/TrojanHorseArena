@@ -14,6 +14,7 @@ The concept compares Phase 2 to **Mercedes-Benz Stadium**. **These are that stad
 - "47% less water"
 
 If Shane asks later: a cited R-file on what *scaled* versions would mean here (rooftop solar, rainwater harvest for field irrigation, daylighting, LED + efficient HVAC). Source: prompt §4 and intake LOOK & FEEL.
+- 2026-10-14: that scaled R-file now exists: **R-028** (`research/R-028-scaled-sustainability-hazel-green.md`). Still parked from params: nothing is sized until Shane sets targets and the architect / MEP confirms.
 
 ## Phase 2 program (parked by D-030)
 
