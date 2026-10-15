@@ -7,12 +7,13 @@
   "active_phase": "P1+P2 (parallel; P1 jumps the line when its data arrives)",
   "phase1_percent": 50,
   "phase2_percent": 85,
-  "current_ticket": "P2-T-012",
-  "current_ticket_title": "D-091..D-093 (R-028): solar CUT, rainwater + LED/daylight unsized; A-901 I, A-201 N, G-001 F; Set Rev G + CAD Rev G (in review)",
+  "current_ticket": "P1-T-MB1",
+  "current_ticket_title": "D-094: new Summertown Metals PEMB alt. 100x60 (mat room + girls flag football locker room); P1-G-101/A-201/A-301/A-901 Rev A; MetalBldg Set + CAD Rev A (in review)",
   "sheets_done": [
     "P1-G-001 Rev E (principal, approved)",
     "P1-A-101 Rev A (approved, frozen); Rev C in review (D-088 / D-089; Rev B superseded)",
     "P1-P-001 Rev A (plumbing scope) + P1-G-002 Rev B cost (R-026b, materials only)",
+    "P1 metal bldg alt. Rev A in review: P1-G-101, A-201, A-301, A-901 (D-094); MetalBldg Set + CAD Rev A",
     "Phase 2 Schematic Set Rev D (approved + frozen, D-073; ARENA copies)",
     "P2-A-101 Rev N + P2-G-003 Rev N (in review; 30 MECH (remote), D-086; 86,964 GSF)",
     "P2-A-102 Rev I (in review; drum door at 235 deg, D-083) + P2-C-101 Rev H (in review; 57,896 / 29,068 / 86,964)",
@@ -26,8 +27,8 @@
   "branch": "grok/keystone",
   "open_decisions": 16,
   "blocked_on": "P1: support-wing data + photos (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). PR on hold.",
-  "what_changed": "D-091 solar CUT, D-092 rainwater (cistern TBD civil), D-093 LED + daylighting, all unsized. New A-901 Rev I (no solar zones), A-201 Rev N, G-001 Rev F; THA_Phase2_Set_RevG.pdf 1.0 MB; THA_Phase2_CAD_RevG.zip.",
-  "what_to_verify": "Skylight trigger IECC 2015 C402.4.2 + compliance path TBD with the architect; cistern size TBD with civil. Colonnade spacing ASSUMED. X6 NE grading (F2).",
-  "next_action": "Shane reviews Set Rev G + CAD Rev G; decides SK-01, SK-02, mech 4.95 %, east-face glazing. No PR, no email.",
-  "question_for_shane": "SK-01 bay height and SK-02 drum height: keep 16 ft / flush, or change?"
+  "what_changed": "D-094 new Phase 1 alternate: 100 x 60 ft clear-span metal building (ASSUMED). Mat room 3,000 SF + locker side (toilets/showers, office, storage). 4 sheets Rev A; THA_Phase1_MetalBldg_Set_RevA.pdf; CAD zip. Cost TBD per quote.",
+  "what_to_verify": "Metal bldg: 60x100 vs 60x80, girls flag football + roster 30, A-3/IIB/no sprinkler, single-user WC for male count (AHJ). P2: skylight trigger IECC C402.4.2 path TBD; cistern TBD civil.",
+  "next_action": "Shane reviews MetalBldg Set Rev A (+ P2 Set Rev G); gets the Summertown Metals quote; confirms size, team and campus location. No PR, no email.",
+  "question_for_shane": "Metal building: keep 60 x 100 ft (fits toilets/showers + office) or cut to 60 x 80?"
 }

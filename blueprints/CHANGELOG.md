@@ -1,5 +1,9 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-14 ~10:10 PM CT · D-094 Phase 1 metal building proposal set Rev A (Shane 9:52 PM CT)
+- New Phase 1 ALTERNATE: pre-engineered metal building (Summertown Metals) on HGHS property replacing the old wrestling room. 100 x 60 ft clear span (ASSUMED), west = wrestling mat room (42 x 42 mat), east = girls' flag football locker room (ASSUMED) + toilet / shower, coach office, storage, JAN., accessible single-user toilet.
+- New: `params/phase1_metal_bldg.yaml`, `phase1/src/p1_metal_bldg.py`; sheets P1-G-101 / P1-A-201 / P1-A-301 / P1-A-901 Rev A (registered in phase1.yaml); THA_Phase1_MetalBldg_Set_RevA.pdf; THA_Phase1_MetalBldg_CAD_RevA.zip (`cad_package.py phase1mb`, plan in feet). Code checks (IBC / IPC 2021, A-3 ASSUMED) PASS; AHJ to confirm. Cost TBD per supplier quote. Remodel set unchanged.
+
 ## 2026-10-14 ~6:10 AM CT — R-028 scaled sustainability, Hazel Green (daily automation)
 - New: `research/R-028-scaled-sustainability-hazel-green.md`. Order-of-magnitude **scaled** readings (not Mercedes numbers) for the D-018 design intent on ~86,964 GSF (L1 57,896 / L2 29,068; Δ 0 SF): **rooftop PV ~160 / 260 / 380 kW-DC** (PVWatts v8 at Hazel Green 1,299–1,399 kWh/kW; ~0.2M–0.5M kWh/yr ≈ 15–37 % of an ENERGY STAR median arena if all-electric; ~$0.3M–$1.2M pre-incentive at LBNL national $1.9–$3.3/W). Huntsville Utilities: **no net metering**, Solar Connect ≤ 50 kW at $0.064270/kWh; TVA DPP avoided cost ~$0.034/kWh. OBBBA: solar credit needs service by 2027-12-31 — plan with no federal credit (not tax advice).
 - Rainwater: 54.29 in/yr (NOAA) × roof × 0.62 × 75–90 % ≈ **1.46M–1.75M gal/yr**, ~36,000 gal per inch; turf 1–1.5 in/week (ACES) ≈ 27,000–41,000 gal per acre per dry week, so roof water is a show-field supplement vs ~15 ac of field pads; storage TBD. Alabama Plumbing Code 2021 Ch. 13 applies.

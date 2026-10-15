@@ -455,6 +455,50 @@ sheets:
         content: Rev B + the NE small EXIT-ONLY door drawn solid (4 doors)
         source: "Shane 2026-10-09 4:49 PM CT (D-089)"
     source: "prompt §9 (sheet list, title block); Shane 2026-10-03 10:06 PM CT (content); scale chosen by KEYSTONE to fit 11x17"
+  P1-G-101:
+    title: COVER + CODE SUMMARY
+    subtitle: "METAL BUILDING ALTERNATE (PRELIMINARY)"
+    revisions:
+      A:
+        file: P1-G-101_RevA
+        frozen: false
+        generator: phase1/src/p1_metal_bldg.py
+        inputs: params/phase1_metal_bldg.yaml (D-094)
+        source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+    source: "Shane 2026-10-14 9:52 PM CT"
+  P1-A-201:
+    title: FLOOR PLAN
+    subtitle: "METAL BUILDING ALTERNATE (PRELIMINARY)"
+    revisions:
+      A:
+        file: P1-A-201_RevA
+        frozen: false
+        generator: phase1/src/p1_metal_bldg.py
+        inputs: params/phase1_metal_bldg.yaml (D-094)
+        source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+    source: "Shane 2026-10-14 9:52 PM CT"
+  P1-A-301:
+    title: ELEVATIONS + SECTION
+    subtitle: "METAL BUILDING ALTERNATE (PRELIMINARY)"
+    revisions:
+      A:
+        file: P1-A-301_RevA
+        frozen: false
+        generator: phase1/src/p1_metal_bldg.py
+        inputs: params/phase1_metal_bldg.yaml (D-094)
+        source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+    source: "Shane 2026-10-14 9:52 PM CT"
+  P1-A-901:
+    title: 3D MASSING
+    subtitle: "METAL BUILDING ALTERNATE (PRELIMINARY)"
+    revisions:
+      A:
+        file: P1-A-901_RevA
+        frozen: false
+        generator: phase1/src/p1_metal_bldg.py
+        inputs: params/phase1_metal_bldg.yaml (D-094)
+        source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+    source: "Shane 2026-10-14 9:52 PM CT"
   P1-G-002:
     title: COST SHEET
     subtitle: "MATS + WALL PADS (PRELIMINARY)"
