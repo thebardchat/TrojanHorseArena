@@ -1,6 +1,6 @@
-# KEYSTONE — 2026-10-14 6:58 PM CT
-HEALTH: YELLOW · P1 50% · P2 85% · Ticket P2-T-012
-WHAT CHANGED: D-091 solar CUT, D-092 rainwater (cistern TBD civil), D-093 LED + daylighting, all unsized. New A-901 Rev I (no solar zones), A-201 Rev N, G-001 Rev F; THA_Phase2_Set_RevG.pdf 1.0 MB; THA_Phase2_CAD_RevG.zip.
-WHAT TO VERIFY: Skylight trigger IECC 2015 C402.4.2 + compliance path TBD with the architect; cistern size TBD with civil. Colonnade spacing ASSUMED. X6 NE grading (F2).
-NEXT ACTION: Shane reviews Set Rev G + CAD Rev G; decides SK-01, SK-02, mech 4.95 %, east-face glazing. No PR, no email.
-QUESTION FOR SHANE: SK-01 bay height and SK-02 drum height: keep 16 ft / flush, or change?
+# KEYSTONE — 2026-10-14 10:03 PM CT
+HEALTH: YELLOW · P1 50% · P2 85% · Ticket P1-T-MB1
+WHAT CHANGED: D-094 new Phase 1 alternate: 100 x 60 ft clear-span metal building (ASSUMED). Mat room 3,000 SF + locker side (toilets/showers, office, storage). 4 sheets Rev A; THA_Phase1_MetalBldg_Set_RevA.pdf; CAD zip. Cost TBD per quote.
+WHAT TO VERIFY: Metal bldg: 60x100 vs 60x80, girls flag football + roster 30, A-3/IIB/no sprinkler, single-user WC for male count (AHJ). P2: skylight trigger IECC C402.4.2 path TBD; cistern TBD civil.
+NEXT ACTION: Shane reviews MetalBldg Set Rev A (+ P2 Set Rev G); gets the Summertown Metals quote; confirms size, team and campus location. No PR, no email.
+QUESTION FOR SHANE: Metal building: keep 60 x 100 ft (fits toilets/showers + office) or cut to 60 x 80?
