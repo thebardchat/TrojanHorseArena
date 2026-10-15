@@ -1,5 +1,9 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-15 ~5:45 AM CT · D-095 Phase 1 metal building Rev B (Shane 5:12 AM CT)
+- Supersedes the D-094 layout: building grown to 60 x 125 ft (5 x 25 ft bays, ASSUMED); restrooms + both team shower / WC rooms open off the corridor; second locker room = boys wrestling (ASSUMED — CONFIRM), each locker room with its own showers. Mat room unchanged.
+- New: `params/phase1_metal_bldg_rev_b.yaml`, `phase1/src/p1_metal_bldg_rev_b.py` (Rev A generator / sheets untouched); P1-G-101 / A-201 / A-301 / A-901 Rev B; THA_Phase1_MetalBldg_Set_RevB.pdf; THA_Phase1_MetalBldg_CAD_RevB.zip (`cad_package.py phase1mbB`). Checks PASS (98 occ., travel 94 ft, common path 52 ft, fixtures met). Cost TBD.
+
 ## 2026-10-14 ~10:10 PM CT · D-094 Phase 1 metal building proposal set Rev A (Shane 9:52 PM CT)
 - New Phase 1 ALTERNATE: pre-engineered metal building (Summertown Metals) on HGHS property replacing the old wrestling room. 100 x 60 ft clear span (ASSUMED), west = wrestling mat room (42 x 42 mat), east = girls' flag football locker room (ASSUMED) + toilet / shower, coach office, storage, JAN., accessible single-user toilet.
 - New: `params/phase1_metal_bldg.yaml`, `phase1/src/p1_metal_bldg.py`; sheets P1-G-101 / P1-A-201 / P1-A-301 / P1-A-901 Rev A (registered in phase1.yaml); THA_Phase1_MetalBldg_Set_RevA.pdf; THA_Phase1_MetalBldg_CAD_RevA.zip (`cad_package.py phase1mb`, plan in feet). Code checks (IBC / IPC 2021, A-3 ASSUMED) PASS; AHJ to confirm. Cost TBD per supplier quote. Remodel set unchanged.

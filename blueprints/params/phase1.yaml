@@ -465,6 +465,13 @@ sheets:
         generator: phase1/src/p1_metal_bldg.py
         inputs: params/phase1_metal_bldg.yaml (D-094)
         source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+        note: "superseded by Rev B (D-095)"
+      B:
+        file: P1-G-101_RevB
+        frozen: false
+        generator: phase1/src/p1_metal_bldg_rev_b.py
+        inputs: params/phase1_metal_bldg_rev_b.yaml (D-095)
+        source: "Shane 2026-10-15 5:12 AM CT (restrooms off the corridor; boys wrestling locker room ASSUMED)"
     source: "Shane 2026-10-14 9:52 PM CT"
   P1-A-201:
     title: FLOOR PLAN
@@ -476,6 +483,13 @@ sheets:
         generator: phase1/src/p1_metal_bldg.py
         inputs: params/phase1_metal_bldg.yaml (D-094)
         source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+        note: "superseded by Rev B (D-095)"
+      B:
+        file: P1-A-201_RevB
+        frozen: false
+        generator: phase1/src/p1_metal_bldg_rev_b.py
+        inputs: params/phase1_metal_bldg_rev_b.yaml (D-095)
+        source: "Shane 2026-10-15 5:12 AM CT (restrooms off the corridor; boys wrestling locker room ASSUMED)"
     source: "Shane 2026-10-14 9:52 PM CT"
   P1-A-301:
     title: ELEVATIONS + SECTION
@@ -487,6 +501,13 @@ sheets:
         generator: phase1/src/p1_metal_bldg.py
         inputs: params/phase1_metal_bldg.yaml (D-094)
         source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+        note: "superseded by Rev B (D-095)"
+      B:
+        file: P1-A-301_RevB
+        frozen: false
+        generator: phase1/src/p1_metal_bldg_rev_b.py
+        inputs: params/phase1_metal_bldg_rev_b.yaml (D-095)
+        source: "Shane 2026-10-15 5:12 AM CT (restrooms off the corridor; boys wrestling locker room ASSUMED)"
     source: "Shane 2026-10-14 9:52 PM CT"
   P1-A-901:
     title: 3D MASSING
@@ -498,6 +519,13 @@ sheets:
         generator: phase1/src/p1_metal_bldg.py
         inputs: params/phase1_metal_bldg.yaml (D-094)
         source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set)"
+        note: "superseded by Rev B (D-095)"
+      B:
+        file: P1-A-901_RevB
+        frozen: false
+        generator: phase1/src/p1_metal_bldg_rev_b.py
+        inputs: params/phase1_metal_bldg_rev_b.yaml (D-095)
+        source: "Shane 2026-10-15 5:12 AM CT (restrooms off the corridor; boys wrestling locker room ASSUMED)"
     source: "Shane 2026-10-14 9:52 PM CT"
   P1-G-002:
     title: COST SHEET

@@ -2,7 +2,7 @@
 """CAD package for a combined set (Shane 2026-10-11 7:20 PM CT): sheet DXFs as drawn (sheet inches) + plan DXFs re-scaled to real feet
 (model space, origin = building / room grid 0,0) + optional OBJ / MTL + README_CAD.txt, zipped deterministically (fixed dates, sorted).
 
-  python blueprints/shared/cad_package.py phase2|phase2g|phase1|phase1mb      (run from the repo root; writes phase*/out/pdf/THA_Phase*_CAD_Rev*.zip)
+  python blueprints/shared/cad_package.py phase2|phase2g|phase1|phase1mb|phase1mbB      (run from the repo root; writes phase*/out/pdf/THA_Phase*_CAD_Rev*.zip)
 """
 import io
 import os
@@ -50,6 +50,12 @@ SETS = {
         dxf_dir=os.path.join(P1, "dxf"),
         feet=[("P1-A-201_RevA", 1.15, 3.77, 0.1, (-15, -15, 115, 75))],   # building SW outside corner (p1_metal_bldg.py ox, oy = bb 2.35 + 1.42), 100 ft E-W x 60 ft N-S
         model=[], extra=["Metal building sizes are ASSUMED (params/phase1_metal_bldg.yaml); frame by Summertown Metals' engineer."]),
+    "phase1mbB": dict(
+        zip="THA_Phase1_MetalBldg_CAD_RevB.zip", set_name="Phase 1 Metal Building Proposal Set Rev B (D-095; P1-G-101, P1-A-201, P1-A-301, P1-A-901 Rev B)",
+        sheets=["P1-G-101_RevB", "P1-A-201_RevB", "P1-A-301_RevB", "P1-A-901_RevB"],
+        dxf_dir=os.path.join(P1, "dxf"),
+        feet=[("P1-A-201_RevB", 1.0, 3.77, 0.09375, (-15, -15, 140, 75))],   # building SW outside corner (p1_metal_bldg_rev_b.py PLAN_OX, bb 2.35 + 1.42), 125 ft E-W x 60 ft N-S
+        model=[], extra=["Metal building sizes are ASSUMED (params/phase1_metal_bldg_rev_b.yaml, D-095); frame by Summertown Metals' engineer."]),
 }
 
 

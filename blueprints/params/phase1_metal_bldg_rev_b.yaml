@@ -1,0 +1,103 @@
+# phase1_metal_bldg.yaml: Phase 1 ALTERNATE — new pre-engineered metal building (Summertown Metals, Summertown TN) on Hazel Green HS property,
+# replacing the old 55 x 45 ft wrestling room. One side = wrestling mat room, other side = flag football locker room (D-094).
+# Shane 2026-10-14 9:52 PM CT, KEYSTONE chat. Every dimension / count not cited is ASSUMED (KEYSTONE as architect). No prices: cost TBD per supplier quote.
+# REV B (D-095, Shane 2026-10-15 5:12 AM CT): restrooms off the corridor + a 2nd (boys wrestling, ASSUMED) locker room; supersedes the D-094 layout.
+# Read by phase1/src/p1_metal_bldg_rev_b.py (P1-G-101, P1-A-201, P1-A-301, P1-A-901 Rev B). Plan coords in feet: x east (0-125), y north (0-60), origin = SW outside corner.
+meta:
+  decision: D-095
+  revision: B
+  date: October 2026
+  source: "Shane 2026-10-14 9:52 PM CT (new metal building proposal set); Shane 2026-10-15 5:12 AM CT (Rev B: restrooms off the corridor, boys wrestling locker room); companion text /workspace/proposals/HGHS_Wrestling_Training_Building_Proposal_PRELIMINARY.pdf (box only)"
+supplier: {name: "Summertown Metals", address: "3864 Summertown Hwy, Summertown, TN 38483", phone: "(931) 796-1521", branch: "Hayden, AL (205) 590-1521", note: "pre-engineered metal building kit; quote TBD", source: "companion proposal PDF (supplier block)"}
+site: {text: "Hazel Green High School, 14380 Hwy 231-431 N, Hazel Green, AL 35750 (Madison County Schools property); exact location on campus TBD", status: ASSUMED, source: "companion proposal PDF (site block)"}
+building:
+  length_ft: {value: 125, status: ASSUMED, note: "D-095: grown one 25 ft bay (60 x 100 -> 60 x 125) for the 2nd locker room + corridor restrooms; mat room unchanged", source: "Shane 2026-10-15 5:12 AM CT (grow in 25 ft bays, e.g. 60 x 125); KEYSTONE ASSUMED"}
+  width_ft: {value: 60, status: ASSUMED, note: "clear span, no interior columns", source: "companion PDF alternate 60 x 80; KEYSTONE ASSUMED"}
+  bay_ft: {value: 25, status: ASSUMED, note: "5 bays of 25 ft (frame lines x 0, 25, 50, 75, 100, 125); standard PEMB bay range", source: "KEYSTONE ASSUMED"}
+  endwall_col_ft: {value: 20, status: ASSUMED, note: "endwall columns y 0, 20, 40, 60", source: "KEYSTONE ASSUMED"}
+  eave_ft: {value: 16, status: ASSUMED, note: "eave height; 14 ft min clear under the frame haunch (companion PDF 14-16 ft clear, assumed)", source: "companion PDF; KEYSTONE ASSUMED"}
+  clear_ft: {value: 14, status: ASSUMED, source: "companion PDF 14-16 ft clear (assumed)"}
+  roof_pitch: {value: 1, note: "1:12 gable, ridge along the 125 ft length", status: ASSUMED, source: "KEYSTONE ASSUMED (common PEMB pitch)"}
+  wall_in: {value: 8, note: "girt + insulated metal panel wall, drawn thickness", status: ASSUMED, source: "KEYSTONE ASSUMED"}
+  divider_x: {value: 50, note: "demising wall on frame line x 50", source: "KEYSTONE ASSUMED"}
+wrestling:
+  rect: [0, 0, 50, 60]
+  source: "D-094 (Shane 2026-10-14 9:52 PM CT: one side wrestling mat room); KEYSTONE ASSUMED west half 50 x 60 ft"
+  mat: {size_ft: 42, rect: [4, 9, 46, 51], note: "one 42 x 42 mat = 28 ft circle + 7 ft each side (NFHS 2-1-2 needs >= 5 ft safety)", source: "R-005 (NFHS Wrestling 2-1-2); KEYSTONE ASSUMED one competition-size mat"}
+  margin_note: {text: "4 ft E / W and 9 ft N / S between the mat and the wall; wall pads 6 ft high on all walls (D-088 / D-089 practice)", status: ASSUMED, source: "KEYSTONE ASSUMED; P1-G-002 Rev B pads"}
+  occ_factor: {value: 50, note: "exercise rooms 50 gross", source: "IBC 2021 Table 1004.5"}
+layout:
+  thick_in: 6
+  source: "D-095 (Shane 2026-10-15 5:12 AM CT); KEYSTONE ASSUMED as architect (6 in walls)"
+  corridors:
+    - {rect: [50, 0, 58, 60], label: "N-S CORRIDOR / ENTRY", source: "KEYSTONE ASSUMED (8 ft)"}
+    - {rect: [58, 26, 125, 34], label: "E-W CORRIDOR", source: "KEYSTONE ASSUMED (8 ft), D-095 restrooms open off it"}
+  rooms:
+    - {id: girls_lr, rect: [58, 34, 90, 60], label: "GIRLS FLAG FOOTBALL LOCKER ROOM", factor: 50, tint: sand, source: "Shane 2026-10-14 9:52 PM CT; IBC 2021 T1004.5 locker rooms 50 gross"}
+    - {id: girls_sh, rect: [90, 34, 104, 60], label: "GIRLS TEAM SHOWER / TOILET", factor: 0, tint: blue, source: "D-095 own showers; door from the locker room AND the corridor; accessory"}
+    - {id: womens, rect: [104, 34, 114, 60], label: "WOMEN'S RESTROOM", factor: 0, tint: blue, source: "D-095 restroom off the corridor; accessory"}
+    - {id: office, rect: [114, 34, 125, 60], label: "COACHES' OFFICE", factor: 150, tint: none, source: "KEYSTONE ASSUMED; IBC T1004.5 business 150 gross"}
+    - {id: boys_lr, rect: [58, 0, 90, 26], label: "BOYS WRESTLING LOCKER ROOM", factor: 50, tint: sand, source: "D-095 (ASSUMED boys wrestling, confirm); IBC 2021 T1004.5 locker rooms 50 gross"}
+    - {id: boys_sh, rect: [90, 0, 104, 26], label: "BOYS TEAM SHOWER / TOILET", factor: 0, tint: blue, source: "D-095 own showers; door from the locker room AND the corridor; accessory"}
+    - {id: mens, rect: [104, 0, 114, 26], label: "MEN'S RESTROOM", factor: 0, tint: blue, source: "D-095 restroom off the corridor; accessory"}
+    - {id: storage, rect: [114, 13, 125, 26], label: "STORAGE", factor: 300, tint: none, source: "KEYSTONE ASSUMED; IBC T1004.5 storage 300 gross"}
+    - {id: jan, rect: [114, 0, 125, 13], label: "JAN. / MECH", factor: 300, tint: none, source: "KEYSTONE ASSUMED; IBC T1004.5 storage / mech 300 gross"}
+team:
+  girls: {text: "girls' flag football (AHSAA)", status: ASSUMED, roster: 30, source: "Shane 9:52 PM CT (girls' flag football likely)"}
+  boys: {text: "boys wrestling", status: "ASSUMED — CONFIRM (Shane wrote 'boys lockeroom and boys locker room for wrestling')", roster: 30, source: "Shane 2026-10-15 5:12 AM CT"}
+  accessible_lockers: {value: 2, note: "per room, >= 5 %, min 1 (ADA 2010 222.1)", source: "ADA 2010 Standards 222.1, 811"}
+  benches: {text: "2 benches per room, one accessible (ADA 903)", status: ASSUMED, source: "ADA 2010 903; KEYSTONE ASSUMED"}
+fixtures:
+  basis: {text: "IPC 2021 Table 2902.1 occupancy A-3 (indoor sport facility) ASSUMED; 50 / 50 sex split of the building load", source: "IPC 2021 Table 2902.1 (A-3 row); IPC 2902.1.1"}
+  provided:
+    womens_rr: {wc: 2, lav: 2, note: "1 WC accessible", source: "KEYSTONE ASSUMED"}
+    mens_rr: {wc: 1, urinal: 1, lav: 1, note: "WC accessible", source: "KEYSTONE ASSUMED"}
+    girls_team: {wc: 1, lav: 1, showers: 4, note: "WC + 1 shower accessible", source: "KEYSTONE ASSUMED"}
+    boys_team: {wc: 1, lav: 1, showers: 4, note: "WC + 1 shower accessible", source: "KEYSTONE ASSUMED"}
+    df: 2
+    service_sink: 1
+    source: "KEYSTONE ASSUMED counts; showers not required by IPC for A-3, provided by program (D-095)"
+  ratios: {wc_m: 75, wc_f: 40, lav_m: 200, lav_f: 150, df: 1000, source: "IPC 2021 Table 2902.1 (A-3 indoor sport row)"}
+doors:
+  - {id: D1, wall: S, at: 54, width_in: 72, exit: true, source: "KEYSTONE ASSUMED main entry pair"}
+  - {id: D2, wall: N, at: 54, width_in: 36, exit: true, source: "KEYSTONE ASSUMED"}
+  - {id: D3, wall: W, at: 30, width_in: 36, exit: true, source: "KEYSTONE ASSUMED"}
+  - {id: D4, wall: S, at: 20, width_in: 72, exit: true, source: "KEYSTONE ASSUMED mat room equipment pair"}
+  - {id: D5, wall: E, at: 30, width_in: 72, exit: true, source: "KEYSTONE ASSUMED corridor end pair"}
+  - {id: I1, wall: X50, at: 30, width_in: 72, exit: false, source: "KEYSTONE ASSUMED mat room to corridor pair"}
+  - {id: GL, wall: Y34, at: 66, width_in: 36, exit: false, source: "girls locker room from the corridor"}
+  - {id: GS, wall: X90, at: 47, width_in: 36, exit: false, source: "girls locker room to its showers"}
+  - {id: GC, wall: Y34, at: 97, width_in: 36, exit: false, source: "D-095 girls team toilets from the corridor"}
+  - {id: WR, wall: Y34, at: 109, width_in: 36, exit: false, source: "D-095 women's restroom off the corridor"}
+  - {id: OF, wall: Y34, at: 119.5, width_in: 36, exit: false, source: "office"}
+  - {id: BL, wall: Y26, at: 66, width_in: 36, exit: false, source: "boys locker room from the corridor"}
+  - {id: BS, wall: X90, at: 13, width_in: 36, exit: false, source: "boys locker room to its showers"}
+  - {id: BC, wall: Y26, at: 97, width_in: 36, exit: false, source: "D-095 boys team toilets from the corridor"}
+  - {id: MR, wall: Y26, at: 109, width_in: 36, exit: false, source: "D-095 men's restroom off the corridor"}
+  - {id: SD, wall: Y26, at: 119.5, width_in: 36, exit: false, source: "storage"}
+  - {id: JD, wall: S, at: 119.5, width_in: 36, exit: false, source: "jan. / mech exterior service door"}
+travel_paths:
+  note: "worst points, orthogonal routes through the drawn doors (KEYSTONE ASSUMED)"
+  source: "KEYSTONE ASSUMED; checked against IBC 2021 Table 1017.2"
+  list:
+    - {name: "mat room NW corner", pts: [[1, 59], [1, 30], [0, 30]], exit: D3, source: "KEYSTONE ASSUMED route"}
+    - {name: "boys locker far corner", pts: [[89, 1], [66, 1], [66, 30], [54, 30], [54, 0]], exit: D1, source: "KEYSTONE ASSUMED route"}
+    - {name: "girls locker far corner", pts: [[89, 59], [66, 59], [66, 30], [54, 30], [54, 60]], exit: D2, source: "KEYSTONE ASSUMED route"}
+    - {name: "girls showers far corner", pts: [[91, 59], [97, 59], [97, 30], [125, 30]], exit: D5, source: "KEYSTONE ASSUMED route"}
+    - {name: "women's restroom far corner", pts: [[105, 59], [109, 59], [109, 30], [125, 30]], exit: D5, source: "KEYSTONE ASSUMED route"}
+    - {name: "coaches' office far corner", pts: [[115, 59], [119.5, 59], [119.5, 30], [125, 30]], exit: D5, source: "KEYSTONE ASSUMED route"}
+  common_path:
+    - {name: "boys locker far corner to the corridor (2 ways)", pts: [[89, 1], [66, 1], [66, 30]], source: "KEYSTONE ASSUMED route"}
+    - {name: "girls locker far corner to the corridor (2 ways)", pts: [[89, 59], [66, 59], [66, 30]], source: "KEYSTONE ASSUMED route"}
+code:
+  occupancy: {text: "A-3 (indoor athletics / training), accessory to Group E campus", status: ASSUMED, source: "IBC 2021 303.1 / 303.4; AHJ to confirm"}
+  construction: {text: "Type IIB (non-combustible PEMB)", status: ASSUMED, source: "IBC 2021 Table 601"}
+  allowable: {text: "A-3 IIB non-sprinklered 9,500 SF / 1 storey allowed (Table 506.2) vs 7,500 SF", source: "IBC 2021 Table 506.2, 504.4"}
+  sprinkler: {text: "Not required if fire area <= 12,000 SF and load < 300 (903.2.1.3); AHJ / Madison County Schools may require", status: ASSUMED, source: "IBC 2021 903.2.1.3"}
+  travel_ft: {value: 200, note: "Group A, non-sprinklered", source: "IBC 2021 Table 1017.2"}
+  common_path_ft: {value: 75, note: "Group A, load <= 49 per room at 75 ft (Table 1006.2.1)", source: "IBC 2021 Table 1006.2.1"}
+  egress_in_per_occ: {value: 0.2, source: "IBC 2021 1005.3.2"}
+  energy: {text: "Alabama Energy Code (IECC 2015 / 90.1-2013) envelope + LED lighting; insulation TBD by supplier", source: "R-028.4 (S17, S18)"}
+lighting: {text: "LED high-bay in the mat room, LED troffers / wraps elsewhere (P1 remodel LED scope carried, D-093 direction); translucent wall-panel daylight band above 12 ft (ASSUMED)", status: ASSUMED, source: "P1-G-002 Rev B LED scope; D-093; KEYSTONE ASSUMED"}
+cost: {text: "TBD per the Summertown Metals quote + site work, foundation, MEP, permit, design fees (no prices invented)", source: "Shane 9:52 PM CT"}
+source: "Shane 2026-10-14 9:52 PM CT + 2026-10-15 5:12 AM CT (D-095), KEYSTONE chat; KEYSTONE ASSUMED as architect"
