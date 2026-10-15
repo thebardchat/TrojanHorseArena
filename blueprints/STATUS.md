@@ -1,6 +1,6 @@
-# KEYSTONE — 2026-10-14 10:03 PM CT
-HEALTH: YELLOW · P1 50% · P2 85% · Ticket P1-T-MB1
-WHAT CHANGED: D-094 new Phase 1 alternate: 100 x 60 ft clear-span metal building (ASSUMED). Mat room 3,000 SF + locker side (toilets/showers, office, storage). 4 sheets Rev A; THA_Phase1_MetalBldg_Set_RevA.pdf; CAD zip. Cost TBD per quote.
-WHAT TO VERIFY: Metal bldg: 60x100 vs 60x80, girls flag football + roster 30, A-3/IIB/no sprinkler, single-user WC for male count (AHJ). P2: skylight trigger IECC C402.4.2 path TBD; cistern TBD civil.
-NEXT ACTION: Shane reviews MetalBldg Set Rev A (+ P2 Set Rev G); gets the Summertown Metals quote; confirms size, team and campus location. No PR, no email.
-QUESTION FOR SHANE: Metal building: keep 60 x 100 ft (fits toilets/showers + office) or cut to 60 x 80?
+# KEYSTONE — 2026-10-15 5:19 AM CT
+HEALTH: YELLOW · P1 50% · P2 85% · Ticket P1-T-MB2
+WHAT CHANGED: D-095 supersedes D-094 layout: 60 x 125 ft (ASSUMED), 2 locker rooms each with team showers, women's + men's restrooms off the corridor. 4 sheets Rev B; THA_Phase1_MetalBldg_Set_RevB.pdf; CAD zip Rev B. Checks PASS.
+WHAT TO VERIFY: Confirm 2nd locker room = boys wrestling (wording ambiguous); 60x125 size; rosters 30/30; A-3/IIB/no sprinkler (AHJ). P2: skylight trigger IECC C402.4.2 path TBD; cistern TBD civil.
+NEXT ACTION: Shane reviews MetalBldg Set Rev B (+ P2 Set Rev G); confirms boys wrestling room, size, campus location; gets the Summertown quote. No PR, no email.
+QUESTION FOR SHANE: Second locker room: boys wrestling only (as drawn), or also a separate boys locker room (needs a 6th bay, 60 x 150)?
