@@ -1,5 +1,9 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-15 ~6:17 AM CT — R-029 metal bldg A-3 / IIB / sprinklers (daily automation)
+- New: `research/R-029-metal-bldg-a3-iib-sprinklers.md` — Rev B metal bldg (7,500 SF, 98 occ., 1 story, A-3/IIB NS ASSUMED) trips no IBC/IFC 2021 903.2.1.3 trigger; Tables 504.3/504.4/506.2 = 55 ft / 2 stories / 9,500 SF; 2018 model text same. Open: A-3 vs E, meets with spectators (would flip to A-4), IMP foam-core NFPA 285 without sprinklers. No sheets/params changed.
+- P1-T-MB2 still in review (D-095). Drive has MetalBldg Set/CAD Rev B + Phase 2 Set/CAD Rev G (uploaded earlier today). P1 remodel still waits on support-wing data (D-002).
+
 ## 2026-10-15 ~5:45 AM CT · D-095 Phase 1 metal building Rev B (Shane 5:12 AM CT)
 - Supersedes the D-094 layout: building grown to 60 x 125 ft (5 x 25 ft bays, ASSUMED); restrooms + both team shower / WC rooms open off the corridor; second locker room = boys wrestling (ASSUMED — CONFIRM), each locker room with its own showers. Mat room unchanged.
 - New: `params/phase1_metal_bldg_rev_b.yaml`, `phase1/src/p1_metal_bldg_rev_b.py` (Rev A generator / sheets untouched); P1-G-101 / A-201 / A-301 / A-901 Rev B; THA_Phase1_MetalBldg_Set_RevB.pdf; THA_Phase1_MetalBldg_CAD_RevB.zip (`cad_package.py phase1mbB`). Checks PASS (98 occ., travel 94 ft, common path 52 ft, fixtures met). Cost TBD.
