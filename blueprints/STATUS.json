@@ -2,13 +2,13 @@
   "agent": "KEYSTONE",
   "project": "Hazel Green Regional Athletic Complex / Trojan Horse Arena",
   "schema_version": 2,
-  "updated_at": "2026-10-15T06:17:31-05:00",
+  "updated_at": "2026-10-16T06:14:53-05:00",
   "health": "YELLOW",
   "active_phase": "P1+P2 (parallel; P1 jumps the line when its data arrives)",
   "phase1_percent": 50,
   "phase2_percent": 85,
   "current_ticket": "P1-T-MB2",
-  "current_ticket_title": "D-095: metal bldg Rev B 60x125 in review; R-029 sprinkler/A-3/IIB check done (practice-only PASS)",
+  "current_ticket_title": "D-095: metal bldg Rev B 60x125 in review; R-029 + R-030 code checks done (sprinklers, shelter, fixtures, panels)",
   "sheets_done": [
     "P1-G-001 Rev E (principal, approved)",
     "P1-A-101 Rev A (approved, frozen); Rev C in review (D-088 / D-089; Rev B superseded)",
@@ -20,15 +20,15 @@
     "Set Rev F (D-090, in review): G-001 E, A-201 M, A-901 H, A-301 F, A-111 F, G-002 G (all PASS), A-401 E, A-103 E; THA_Phase2_Set_RevF.pdf (15 sheets, 1.0 MB)",
     "THA_Phase1_Set_RevA.pdf (4 sheets) + CAD zips THA_Phase2_CAD_RevF.zip / THA_Phase1_CAD_RevA.zip (in review)",
     "Superseded, in CHANGELOG: Set Rev E (G-001 D, A-301 E, A-111 E, G-002 F), A-201 J / K / L, A-901 E / G; A-101 L / M, A-102 H, G-003 L / M, C-101 G; A-101 K / A-102 G (approved, superseded by N / I)",
-    "Research: R-001..R-029 (R-029 metal bldg A-3/IIB/sprinklers 2026-10-15; R-028 sustainability 2026-10-14; R-001..R-013 prompt queue filled)"
+    "Research: R-001..R-030 (R-030 metal bldg shelter/fixtures/panels 2026-10-16; R-029 A-3/IIB/sprinklers 2026-10-15; R-001..R-013 prompt queue filled)"
   ],
   "sheets_in_progress": [],
-  "last_commit": "457aa3c",
+  "last_commit": "5d1cb46",
   "branch": "grok/keystone",
   "open_decisions": 16,
-  "blocked_on": "P1: Shane review MetalBldg Rev B (locker wording, size, campus). Support-wing data + photos (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). PR on hold.",
-  "what_changed": "R-029: Rev B metal bldg passes 903.2.1.3 as drawn (7,500 SF <12,000; 98 occ <300; 1 story at LOD), no sprinklers if practice-only. A-3 IIB NS allows 9,500 SF/2 st/55 ft. Open: A-3 vs E, meets/spectators, IMP NFPA 285.",
-  "what_to_verify": "Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E + practice-only (R-029). P2: skylight IECC C402.4.2 TBD; cistern TBD civil.",
-  "next_action": "Shane reviews MetalBldg Set Rev B (+ P2 Set Rev G); confirms boys wrestling room, size, campus location; gets Summertown quote (ask IMP NFPA 285 / foam-core). No PR, no email.",
+  "blocked_on": "P1: Shane review MetalBldg Rev B (locker wording, size, campus spot). DCM: A-3 vs E + shelter. Support-wing data (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). PR on hold.",
+  "what_changed": "R-030: Hazel Green is in the 250 mph tornado zone. As A-3 no storm shelter; if E, IBC 423.5 wants one (~60) unless campus shelters count; DCM rule unclear. Fixtures drawn pass all rows. Translucent band only on walls with fire separation distance 10+ ft.",
+  "what_to_verify": "Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E + practice-only. Ask DCM: shelter if E? existing HGHS shelters? Panel plastic CC1/CC2. Mat room skylight trigger (R-028) UNVERIFIED.",
+  "next_action": "Shane reviews MetalBldg Rev B; picks campus spot (sets FSD/band). Summertown RFQ: panel class + shelter alt. No PR, no email. Copy to ARENA\\_KEYSTONE on Shane PC done by parent separately; Pi falls back to GitHub mirror.",
   "question_for_shane": "Second locker room: boys wrestling only (as drawn), or also a separate boys locker room (needs a 6th bay, 60 x 150)?"
 }
