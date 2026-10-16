@@ -1,5 +1,9 @@
 # CHANGELOG — KEYSTONE
 
+## 2026-10-16 ~6:15 AM CT — R-030 metal bldg storm shelter / fixtures / translucent panels (daily automation)
+- New: `research/R-030-metal-bldg-shelter-fixtures-panels.md` — Madison County is in the ICC 500 Fig. 304.2(1) 250 mph tornado zone (DCM Bulletin 23-01 map). As A-3: no IBC 423.5 shelter. If E (98 ≥ 50): shelter for ≥ ~60 (mat room) unless existing HGHS shelters count; DCM's classroom-area method may say none — ask DCM. Fixtures drawn pass A-3 gym / E / arena rows (IPC 403.1 = IBC 2902.1; 49 M / 49 F per 403.1.1); showers not code-required. IBC 2607: translucent plastic band only on walls with FSD ≥ 10 ft (Table 705.5 IIB A/E: 1 h < 10 ft, 0 h ≥ 10 ft); continuous band needs FSD > 30 ft + CC1. 2018 text same in substance.
+- Flags: yaml `fixtures.ratios` = arena row labelled A-3 (text only); R-028 C402.4.2 skylight trigger may reach the 3,000 SF mat room (UNVERIFIED). No sheets/params/decisions changed. P1-T-MB2 still in review (D-095).
+
 ## 2026-10-15 ~6:17 AM CT — R-029 metal bldg A-3 / IIB / sprinklers (daily automation)
 - New: `research/R-029-metal-bldg-a3-iib-sprinklers.md` — Rev B metal bldg (7,500 SF, 98 occ., 1 story, A-3/IIB NS ASSUMED) trips no IBC/IFC 2021 903.2.1.3 trigger; Tables 504.3/504.4/506.2 = 55 ft / 2 stories / 9,500 SF; 2018 model text same. Open: A-3 vs E, meets with spectators (would flip to A-4), IMP foam-core NFPA 285 without sprinklers. No sheets/params changed.
 - P1-T-MB2 still in review (D-095). Drive has MetalBldg Set/CAD Rev B + Phase 2 Set/CAD Rev G (uploaded earlier today). P1 remodel still waits on support-wing data (D-002).
