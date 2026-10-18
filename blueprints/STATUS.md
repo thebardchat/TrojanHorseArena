@@ -1,6 +1,6 @@
-# KEYSTONE — 2026-10-17 6:28 AM CT
+# KEYSTONE — 2026-10-18 6:19 AM CT
 HEALTH: YELLOW · P1 50% · P2 85% · Ticket P1-T-MB2
-WHAT CHANGED: R-031: metal bldg is Risk Category II (A-3 or E at 98). Hazel Green design loads (ASCE 7-16): wind 105 mph, ground snow 10 psf, roof live 20 psf, Ss 0.265 / S1 0.118 = Seismic Design Category C on default soil (B if geotech shows Site Class C). No tornado-load chapter under IBC 2018/2021.
-WHAT TO VERIFY: Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E. Ask DCM: shelter if E? Building stays detached + not a designated shelter (keeps RC II). Exposure B/C + soil site class wait on campus spot / geotech.
-NEXT ACTION: Shane reviews MetalBldg Rev B; picks campus spot. Summertown RFQ with R-031 loads (RC II, 105 mph, Exp C, 10 psf, 20 psf, SDC C) + panel class + shelter alt. No PR, no email. Copy to ARENA\_KEYSTONE on Shane PC done by parent separately; Pi falls back to GitHub mirror.
+WHAT CHANGED: R-032: Madison County = climate zone 3A; DCM (school code) lists ASHRAE 90.1-2013. Price roof U-0.035 (R-19 + R-11 liner) and walls U-0.079 to meet both energy paths. Mat room trips the skylight rule as drawn; translucent band likely clears it with daylight controls. Mat room fresh air ~1,740 cfm.
+WHAT TO VERIFY: Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E. Ask DCM: shelter if E? Energy path 90.1-2013 only or IECC OK? How is ceiling height measured for the skylight rule? HVAC type (assumed heated + cooled).
+NEXT ACTION: Shane reviews MetalBldg Rev B; picks campus spot. Summertown RFQ: R-031 loads + R-032 energy items (U-0.035 roof, U-0.079 wall, cool roof, band NFRC, air barrier, skylight alt). No PR/email. Copy to ARENA\_KEYSTONE on Shane PC skipped (automation, no one to approve local access); Pi uses GitHub.
 QUESTION FOR SHANE: Second locker room: boys wrestling only (as drawn), or also a separate boys locker room (needs a 6th bay, 60 x 150)?

@@ -2,13 +2,13 @@
   "agent": "KEYSTONE",
   "project": "Hazel Green Regional Athletic Complex / Trojan Horse Arena",
   "schema_version": 2,
-  "updated_at": "2026-10-17T06:28:35-05:00",
+  "updated_at": "2026-10-18T06:19:36-05:00",
   "health": "YELLOW",
   "active_phase": "P1+P2 (parallel; P1 jumps the line when its data arrives)",
   "phase1_percent": 50,
   "phase2_percent": 85,
   "current_ticket": "P1-T-MB2",
-  "current_ticket_title": "D-095: metal bldg Rev B 60x125 in review; R-029/R-030/R-031 done (sprinklers, shelter, fixtures, panels, design loads for Summertown RFQ)",
+  "current_ticket_title": "D-095: metal bldg Rev B 60x125 in review; R-029/R-030/R-031/R-032 done (sprinklers, shelter, fixtures, panels, design loads, energy + ventilation for Summertown RFQ)",
   "sheets_done": [
     "P1-G-001 Rev E (principal, approved)",
     "P1-A-101 Rev A (approved, frozen); Rev C in review (D-088 / D-089; Rev B superseded)",
@@ -20,15 +20,15 @@
     "Set Rev F (D-090, in review): G-001 E, A-201 M, A-901 H, A-301 F, A-111 F, G-002 G (all PASS), A-401 E, A-103 E; THA_Phase2_Set_RevF.pdf (15 sheets, 1.0 MB)",
     "THA_Phase1_Set_RevA.pdf (4 sheets) + CAD zips THA_Phase2_CAD_RevF.zip / THA_Phase1_CAD_RevA.zip (in review)",
     "Superseded, in CHANGELOG: Set Rev E (G-001 D, A-301 E, A-111 E, G-002 F), A-201 J / K / L, A-901 E / G; A-101 L / M, A-102 H, G-003 L / M, C-101 G; A-101 K / A-102 G (approved, superseded by N / I)",
-    "Research: R-001..R-031 (R-031 metal bldg design loads / RFQ 2026-10-17; R-030 shelter/fixtures/panels 2026-10-16; R-029 A-3/IIB/sprinklers 2026-10-15; R-001..R-013 prompt queue filled)"
+    "Research: R-001..R-032 (R-032 metal bldg energy/ventilation RFQ 2026-10-18; R-031 design loads 2026-10-17; R-030 shelter/fixtures/panels 2026-10-16; R-029 A-3/IIB/sprinklers 2026-10-15; R-001..R-013 prompt queue filled)"
   ],
   "sheets_in_progress": [],
-  "last_commit": "9cdcc12",
+  "last_commit": "d687146",
   "branch": "grok/keystone",
   "open_decisions": 16,
   "blocked_on": "P1: Shane review MetalBldg Rev B (locker wording, size, campus spot). DCM: A-3 vs E + shelter. Support-wing data (D-002). P2: owner (D-007), AHJ (D-008), site (D-006), budget (D-012); trademark (D-042). PR on hold.",
-  "what_changed": "R-031: metal bldg is Risk Category II (A-3 or E at 98). Hazel Green design loads (ASCE 7-16): wind 105 mph, ground snow 10 psf, roof live 20 psf, Ss 0.265 / S1 0.118 = Seismic Design Category C on default soil (B if geotech shows Site Class C). No tornado-load chapter under IBC 2018/2021.",
-  "what_to_verify": "Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E. Ask DCM: shelter if E? Building stays detached + not a designated shelter (keeps RC II). Exposure B/C + soil site class wait on campus spot / geotech.",
-  "next_action": "Shane reviews MetalBldg Rev B; picks campus spot. Summertown RFQ with R-031 loads (RC II, 105 mph, Exp C, 10 psf, 20 psf, SDC C) + panel class + shelter alt. No PR, no email. Copy to ARENA\\_KEYSTONE on Shane PC done by parent separately; Pi falls back to GitHub mirror.",
+  "what_changed": "R-032: Madison County = climate zone 3A; DCM (school code) lists ASHRAE 90.1-2013. Price roof U-0.035 (R-19 + R-11 liner) and walls U-0.079 to meet both energy paths. Mat room trips the skylight rule as drawn; translucent band likely clears it with daylight controls. Mat room fresh air ~1,740 cfm.",
+  "what_to_verify": "Confirm 2nd locker = boys wrestling; 60x125; rosters 30/30; A-3 vs E. Ask DCM: shelter if E? Energy path 90.1-2013 only or IECC OK? How is ceiling height measured for the skylight rule? HVAC type (assumed heated + cooled).",
+  "next_action": "Shane reviews MetalBldg Rev B; picks campus spot. Summertown RFQ: R-031 loads + R-032 energy items (U-0.035 roof, U-0.079 wall, cool roof, band NFRC, air barrier, skylight alt). No PR/email. Copy to ARENA\\_KEYSTONE on Shane PC skipped (automation, no one to approve local access); Pi uses GitHub.",
   "question_for_shane": "Second locker room: boys wrestling only (as drawn), or also a separate boys locker room (needs a 6th bay, 60 x 150)?"
 }
